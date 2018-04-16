@@ -8,7 +8,7 @@ tags:
   - development
 ---
 
-"At the extremely basic level, there are basically two good qualities that each programmer should strive for: programming skill and employee skill.
+At the extremely basic level, there are basically two good qualities that each programmer should strive for: programming skill and employee skill.
 
 _Programming skill_ is basically the ability to write good, solid, performant, maintainable, and all-the-other-desireable-code-adjectives code. This is what coders tend to spend their time harping on and debating about and reading about.
 
@@ -34,4 +34,4 @@ However, the point is that managers are the people you need to impress to get jo
 
 Despite what we as programmers like to think, coding skill is not what really matters if you want to find success in a job, or at least in many jobs. Being a good employee is at least as important, sometimes more.
 
-[Discuss on Hacker News](http://news.ycombinator.com/item?id=4502272)."
+[Discuss on Hacker News](http://news.ycombinator.com/item?id=4502272).

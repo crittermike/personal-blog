@@ -8,7 +8,7 @@ tags:
   - drupal
 ---
 
-"Drupal's main draw is that it gives you the power to do an _insane_ amount of work with zero coding. This is both its blessing and its curse.
+Drupal's main draw is that it gives you the power to do an _insane_ amount of work with zero coding. This is both its blessing and its curse.
 
 ### The blessing
 
@@ -96,4 +96,4 @@ So your work isn't quite as interesting or challenging as it might be if you're 
 
 So what to do? Well I know what I'll do, I'll keep using Drupal and getting crap done, and I'll just use other technologies on side projects to stay sane and feel challenged and interested. Tis the power of the golden handcuffs.
 
-Discuss on [Hacker News](http://news.ycombinator.com/item?id=4604555) or reply to me [on Twitter](http://twitter.com/mcrittenden)."
+Discuss on [Hacker News](http://news.ycombinator.com/item?id=4604555) or reply to me [on Twitter](http://twitter.com/mcrittenden).

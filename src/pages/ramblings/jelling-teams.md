@@ -8,7 +8,7 @@ tags:
   - leadership
 ---
 
-"_This post was originally published [on the Phase2 blog](https://www.phase2technology.com/blog/the-whys-and-hows-of-jelling-teams/)._
+_This post was originally published [on the Phase2 blog](https://www.phase2technology.com/blog/the-whys-and-hows-of-jelling-teams/)._
 
 Think back to your most successful project. The one that was on time and on budget with a happy client and work that everyone could be proud of. Chances are, that team worked really well together, right? Did the members of that team all have a lot of respect for each other? Did they all want to make each other look good? If the project was truly a success, I'd say it's pretty likely that all of those are true.
 
@@ -136,4 +136,4 @@ A jelled team can make a world of difference in the success of your project, yet
 
 I think the reason is simple. If you see a smooth project where deadlines are being hit and the client is happy, then it's easy to assume that the team is happy. **This can lead us to think of happy and motivated teams as the result of a successful project, rather than a cause of the project being successful. The opposite is true.**
 
-Teams like this make projects successful, rather than successful projects making teams like this. It’s time for us to realize that, and to encourage it. Remember that teams _want_ to jell, and we just have to let them by removing anything standing in the way."
+Teams like this make projects successful, rather than successful projects making teams like this. It’s time for us to realize that, and to encourage it. Remember that teams _want_ to jell, and we just have to let them by removing anything standing in the way.

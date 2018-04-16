@@ -8,7 +8,7 @@ tags:
   - leadership
 ---
 
-"You’re woken up at 4am to the lovely sound of your phone ringing. You answer, and a robotic voice tells you that an outage has been detected on your current project’s site and you’re the person on call this week, you lucky duck! You roll your grumbling self out of bed, plop into your computer chair, and get to work, staring at the screen through half-open bloodshot eyes.
+You’re woken up at 4am to the lovely sound of your phone ringing. You answer, and a robotic voice tells you that an outage has been detected on your current project’s site and you’re the person on call this week, you lucky duck! You roll your grumbling self out of bed, plop into your computer chair, and get to work, staring at the screen through half-open bloodshot eyes.
 
 It turns out that trying to submit the contact form is causing the site to churn and eventually timeout. This is a Really Bad Thing because the site happens to be for a Japanese Healthcare company and right now it’s the middle of the afternoon in Japan, the peak time for users to be trying to contact the company. The users are angry, which makes the client angry, which leads to a 4am wakeup call that makes you angry.
 
@@ -160,4 +160,4 @@ Let the entire team shout out as many ideas as they can, then work through the l
 
 If you’re tempted to just go with the first thing that everyone comes up with instead of asking for more options, fight that temptation. It can be very useful to force yourself to come up with at least 3 options, even if one seems like the obvious choice. This is sometimes called the [Rule of Three](http://www.conferencesthatwork.com/index.php/learning/2012/05/make-better-decisions-with-the-rule-of-three/).
 
-And you’re done! You’ve turned a major screwup into a major win. Doesn’t that feel good?"
+And you’re done! You’ve turned a major screwup into a major win. Doesn’t that feel good?

@@ -8,7 +8,7 @@ tags:
   - drupal
 ---
 
-"There are a lot of things that make Drupal projects unique from your typical software development projects, but one of the most interesting to me is the productivity curve.
+There are a lot of things that make Drupal projects unique from your typical software development projects, but one of the most interesting to me is the productivity curve.
 
 Specifically, Drupal projects tend to have lots of visible progress at the start and then things slow down considerably. In contrast, many (most?) non-Drupal projects are the opposite - they have little to show at the beginning but things are being cranked out really quickly closer to the end.
 
@@ -82,4 +82,4 @@ But that's not exactly a revolutionary idea. We've all heard of sprints and MVPs
 
 Other than that, I think it's just important that clients are made aware and expectations are set. Make sure they know that they'll see lots of changes at first and then the visible changes will slow down because that's just the way Drupal is. And work really really hard to find places where you can show them complete features, or even better, hand them off so that the clients can play with them in a client-facing dev environment somewhere.
 
-Am I saying that this is a reason to avoid Drupal? Absolutely not. I think Drupal is awesome, and the amount of work you can get done without coding has many pros which far outweigh the one con mentioned in this post. I'm just saying that this is a caveat to keep in mind, and plan ahead for, and explain to clients ahead of time."
+Am I saying that this is a reason to avoid Drupal? Absolutely not. I think Drupal is awesome, and the amount of work you can get done without coding has many pros which far outweigh the one con mentioned in this post. I'm just saying that this is a caveat to keep in mind, and plan ahead for, and explain to clients ahead of time.

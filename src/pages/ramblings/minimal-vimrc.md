@@ -8,7 +8,7 @@ tags:
   - development
 ---
 
-"For those of you who work on a lot of unfamiliar servers, you probably use vim a good bit. It can be useful to have a simple, small .vimrc file that you can just copy to wherever to set some sane defaults.
+For those of you who work on a lot of unfamiliar servers, you probably use vim a good bit. It can be useful to have a simple, small .vimrc file that you can just copy to wherever to set some sane defaults.
 
 Here's the one I use for that. It fixes indenting, syntax highlighting, and a couple other small things, and that's it. 
 

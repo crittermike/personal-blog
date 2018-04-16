@@ -8,7 +8,7 @@ tags:
   - frontend
 ---
 
-"Every time a discussion of AngularJS pops up, [someone](http://www.reddit.com/r/programming/comments/y6vw0/angularjs_an_awesome_javascript_library/c5sygyn) [inevitably](https://news.ycombinator.com/item?id=5526058) [brings](https://news.ycombinator.com/item?id=4375821) [up](https://news.ycombinator.com/item?id=5169170) the fact that Angular wants you to add custom ng-* attributes to your markup. They say that we worked so hard to get away from stuff like:
+Every time a discussion of AngularJS pops up, [someone](http://www.reddit.com/r/programming/comments/y6vw0/angularjs_an_awesome_javascript_library/c5sygyn) [inevitably](https://news.ycombinator.com/item?id=5526058) [brings](https://news.ycombinator.com/item?id=4375821) [up](https://news.ycombinator.com/item?id=5169170) the fact that Angular wants you to add custom ng-* attributes to your markup. They say that we worked so hard to get away from stuff like:
 
 ```html
 <a onclick="whatever()" href="#">Click me</a>
@@ -60,4 +60,4 @@ On the other hand, if your jQuery callbacks are defined in one of 10 or 20 JS fi
 
 ### Did I miss anything?
 
-[Tweet me](http://twitter.com/mcrittenden) if so."
+[Tweet me](http://twitter.com/mcrittenden) if so.

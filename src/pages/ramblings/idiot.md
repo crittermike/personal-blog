@@ -7,7 +7,7 @@ tags:
   - self
 ---
 
-"How often each day do you feel like an idiot? Hopefully, the answer is "just enough." I believe that measuring idiotic feelings per day (IFPS) is a decent method of predicting or identifying burnout. Here are your options:
+How often each day do you feel like an idiot? Hopefully, the answer is "just enough." I believe that measuring idiotic feelings per day (IFPS) is a decent method of predicting or identifying burnout. Here are your options:
 
 ## I feel like an idiot all the dang time!
 
@@ -32,4 +32,4 @@ Your work is likely just challenging enough that it keeps you interested and eng
 
 ## Embrace your inner idiot!
 
-So it's up to you to make sure that the work you're doing is at the right level to make you feel like an idiot just enough. If you're too far one way or the other, then reach out to your manager or someone else who can possibly help correct it."
+So it's up to you to make sure that the work you're doing is at the right level to make you feel like an idiot just enough. If you're too far one way or the other, then reach out to your manager or someone else who can possibly help correct it.

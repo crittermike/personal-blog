@@ -8,7 +8,7 @@ tags:
   - drupal
 ---
 
-"For years now I've wanted to dig through Drupal core, line by line, and understand how the big pieces do what they do. I'm finally doing that, and writing up my notes as I go.
+For years now I've wanted to dig through Drupal core, line by line, and understand how the big pieces do what they do. I'm finally doing that, and writing up my notes as I go.
 
 **[Drupal 7 Deconstructed](https://github.com/mikecrittenden/drupal-7-deconstructed) is the in-progress result of that.**
 
@@ -44,4 +44,4 @@ I chose Drupal 7 because it still has a pretty long shelf life left. Drupal 8 De
 
 I would love to take apart some of the more commonly used contrib modules like Views, CTools, Panels, Webform, Pathauto, etc., as well, but one step at a time!
 
-**Please check out [Drupal 7 Deconstructed](https://github.com/mikecrittenden/drupal-7-deconstructed) and let me know what you think so far!**"
+**Please check out [Drupal 7 Deconstructed](https://github.com/mikecrittenden/drupal-7-deconstructed) and let me know what you think so far!**

@@ -8,7 +8,7 @@ tags:
   - drupal
 ---
 
-"If you've never heard of it, Grav is a pretty neat little flat-file CMS. If you're a Drupal developer, words like "flat-file" and "neat" and "little" are probably foreign to you. This post is an attempt to explain what Grav is, why it's neat, and how to use it, in terms that you'll understand.
+If you've never heard of it, Grav is a pretty neat little flat-file CMS. If you're a Drupal developer, words like "flat-file" and "neat" and "little" are probably foreign to you. This post is an attempt to explain what Grav is, why it's neat, and how to use it, in terms that you'll understand.
 
 Wait, what's wrong with just using Drupal?
 ------------------------------------------
@@ -95,6 +95,7 @@ In Drupal, creating a content listing happens (usually) in the Views UI.
 
 In Grav, there’s the concept of a “Collection” which allows you to loop through and list arbitrary content. Here’s an example:
 
+```yaml
 content:
     items: @self.children
     order:
@@ -102,13 +103,16 @@ content:
         dir: desc
     limit: 10
     pagination: true
+```
 
 And then in the Twig template, you’d just loop through them like so:
 
+```twig
 {% for p in page.collection %}
     <h2>{{ p.title }}</h2>
     {{ p.summary }}
 {% endfor %}
+```
 
 Collections support lots of the same filtering/sorting/pagination concepts that Views supports. Some of the more complex stuff (such as fields from relationships or exposed filters) would have to be custom built via a plugin, but this should handle most of the things you’d typically use Views for pretty well.
 
@@ -125,14 +129,18 @@ In Drupal, creating a Taxonomy happens in the blah blah blah you get the idea. A
 
 In Grav, creating a Taxonomy just means adding it to your site.yaml config file, like so:
 
+```yaml
 taxonomies: \[category,tag\]
+```
 
 Just add it to that array and you’ve created a new taxonomy. Then, you can reference it from any given page like this, in the YAML Frontmatter:
 
+```yaml
 title: Post title
 taxonomy:
     tag: \[animal, dog\]
     category: pets
+```
 
 And that’s it. Taxonomies are MUCH simpler in Grav than in Drupal. They aren’t fieldable, for example (without some customization). They’re basically just a way to group content together, so that you can create listings (“Collections”) out of them.
 
@@ -212,4 +220,4 @@ Grav also doesn’t really have the notion of an editorial workflow or moderatio
 
 Obviously, Grav also isn’t going to have anywhere near the amount of 3rd party plugins (modules) that Drupal has. Things like integration with web services or commonly used libraries will have to be hooked up yourself, more often than not. That said, the API is solid and the [documentation for it](https://learn.getgrav.org/api/) is legit.
 
-That’s by no means an exhaustive list, but it's about all I’ve found so far. For your typical small to medium sized sites, Grav can be a really great solution that cuts out some of the overhead of a typical Drupal site. Recommended!"
+That’s by no means an exhaustive list, but it's about all I’ve found so far. For your typical small to medium sized sites, Grav can be a really great solution that cuts out some of the overhead of a typical Drupal site. Recommended!

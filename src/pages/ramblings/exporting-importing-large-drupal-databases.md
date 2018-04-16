@@ -8,7 +8,7 @@ tags:
   - drupal
 ---
 
-"Once your site's database dump file gets to be 1GB or more, phrases like "oh, just download and import a DB dump" can't really be taken for granted anymore. So here are some tips for dealing with large databases, especially those of the Drupal variety.
+Once your site's database dump file gets to be 1GB or more, phrases like "oh, just download and import a DB dump" can't really be taken for granted anymore. So here are some tips for dealing with large databases, especially those of the Drupal variety.
 
 Exporting
 ---------
@@ -143,4 +143,4 @@ Tools and Resource
 In this post I tried to focus on commands that everyone already has. If this just isn't cutting it for you, then look into these tools which could help even more:
 
 *   [SyncDB](https://www.drupal.org/project/syncdb) \- a couple Drush commands that split DB dumps into separate files and import them in parallel, drastically speeding things up
-*   [Drush SQL Sync Pipe](https://www.drupal.org/project/drush_sql_sync_pipe) \- an alternative to "drush sql-sync" that uses pipes where possible to speed things up"
+*   [Drush SQL Sync Pipe](https://www.drupal.org/project/drush_sql_sync_pipe) \- an alternative to "drush sql-sync" that uses pipes where possible to speed things up

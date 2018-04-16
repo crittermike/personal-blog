@@ -7,7 +7,7 @@ tags:
   - self
 ---
 
-"I'm seeing it more and more--job descriptions with perks about [nerf guns](http://www.businessinsider.com/bliptv-office-tour-2011-3?op=1) and happy hour, or new grads who joined a startup and are bragging about [ping pong tables](http://www.linkedin.com/jobs/jobs-Senior-Android-Developer-3450473) and [free coke](http://www.linkedin.com/jobs/jobs-Director-Sales-3586917). This is apparently something that people see as a fun culture, a sign that this is a place you'd enjoy working at and has people you'd enjoy working with.
+I'm seeing it more and more--job descriptions with perks about [nerf guns](http://www.businessinsider.com/bliptv-office-tour-2011-3?op=1) and happy hour, or new grads who joined a startup and are bragging about [ping pong tables](http://www.linkedin.com/jobs/jobs-Senior-Android-Developer-3450473) and [free coke](http://www.linkedin.com/jobs/jobs-Director-Sales-3586917). This is apparently something that people see as a fun culture, a sign that this is a place you'd enjoy working at and has people you'd enjoy working with.
 
 This stuff doesn't matter.
 
@@ -35,4 +35,4 @@ Do your employees feel heard when they have suggestions or questions? Do your ma
 
 These are the things that produce a good culture, and these are the things to strive for, and these are things that you can't buy at Target or brag about on job descriptions, but they're the things that keep people around and working hard and happy.
 
-[Discuss on Hacker News](http://news.ycombinator.com/item?id=4511104)."
+[Discuss on Hacker News](http://news.ycombinator.com/item?id=4511104).

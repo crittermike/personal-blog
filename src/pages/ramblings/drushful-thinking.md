@@ -8,7 +8,7 @@ tags:
   - drupal
 ---
 
-"What is Drush?
+What is Drush?
 --------------
 
 If you're asking that question right now then congratulations! You are one of the lucky people who will have your life changed today! Cancel everything and read up on [Drush](https://github.com/drush-ops/drush), the command line bridge to Drupal.
@@ -248,4 +248,4 @@ Play a game with yourself. Next time you're working on site building or anything
 
 But why? Well for one, before you know it, you'll be spending  much less time waiting on page loads. But secondly, Drush lends itself to automation, and thinking in terms of Drush naturally leads you to think in terms of automating and scripting things, which is a great place to be.
 
-Practice some Drushful Thinking! And let me know any of your favorite Drush tips and tricks in the comments. Check out [drushcommands.com](http://www.drushcommands.com/) for some more inspiration."
+Practice some Drushful Thinking! And let me know any of your favorite Drush tips and tricks in the comments. Check out [drushcommands.com](http://www.drushcommands.com/) for some more inspiration.

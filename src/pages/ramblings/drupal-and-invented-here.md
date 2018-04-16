@@ -8,7 +8,7 @@ tags:
   - leadership
 ---
 
-"We’ve all heard the term [Not Invented Here (NIH)](http://en.wikipedia.org/wiki/Not_invented_here) thrown around. It refers to a phobia of using technologies that weren’t developed in-house. What some of us might be a little less familiar with is its opposite, [Invented Here (IH)](http://en.wikipedia.org/wiki/Invented_here), which occurs when people are uncomfortable innovating in-house or developing anything for themselves.
+We’ve all heard the term [Not Invented Here (NIH)](http://en.wikipedia.org/wiki/Not_invented_here) thrown around. It refers to a phobia of using technologies that weren’t developed in-house. What some of us might be a little less familiar with is its opposite, [Invented Here (IH)](http://en.wikipedia.org/wiki/Invented_here), which occurs when people are uncomfortable innovating in-house or developing anything for themselves.
 
 IH is a huge problem in the Drupal world.
 
@@ -64,4 +64,4 @@ Ask yourself if you really need integration with this stuff. If you do, then ask
 
 This is true sometimes, and in cases where this is true I'd probably advise you to use contrib. This post is about cases where it's not true--where extending and overriding contrib takes more time than custom building. I've found that if you really think about it, this happens more often than you'd like to admit.
 
-**Update (June 28, 2013):** Mike Prasuhn (known in the Drupal community as mikey_p) has written a cool follow up to this post in which he actually implements the feature I described above (in both D7 and D8) and describes the effort required. [Check it out](http://shomeya.com/articles/understanding-how-custom-code-can-help-you-build-your-drupal-site)!"
+**Update (June 28, 2013):** Mike Prasuhn (known in the Drupal community as mikey_p) has written a cool follow up to this post in which he actually implements the feature I described above (in both D7 and D8) and describes the effort required. [Check it out](http://shomeya.com/articles/understanding-how-custom-code-can-help-you-build-your-drupal-site)!

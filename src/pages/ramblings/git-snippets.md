@@ -8,7 +8,7 @@ tags:
   - tools
 ---
 
-"This is the post that I'll use as a living dumping ground for random useful git snippets that I come across. Enjoy!
+This is the post that I'll use as a living dumping ground for random useful git snippets that I come across. Enjoy!
 
 Use git blame to see when a change was REALLY made, as opposed to just a whitespace or copy/paste commit:
 

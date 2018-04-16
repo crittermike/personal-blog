@@ -8,7 +8,7 @@ tags:
   - drupal
 ---
 
-"[Cloud9](http://c9.io) is an IDE and development environment in the cloud. Yeah yeah, buzzwords buzzwords, but what does this really mean?
+[Cloud9](http://c9.io) is an IDE and development environment in the cloud. Yeah yeah, buzzwords buzzwords, but what does this really mean?
 
 Let's dig in a bit, starting with the positives.
 
@@ -143,4 +143,4 @@ Overall I think Cloud9 is really pretty great for what it is. It's lacking some 
 
 I'm using it for a pretty big chunk of my day to day development nowadays, and it's saved me plenty of headaches.
 
-Do you have any concerns or questions? Feel free to comment below if so. I'm curious to hear about the types of things holding other people back from using it."
+Do you have any concerns or questions? Feel free to comment below if so. I'm curious to hear about the types of things holding other people back from using it.

@@ -8,7 +8,7 @@ tags:
   - leadership
 ---
 
-"My #1 absolute top priority as tech lead for any given project is to make sure everyone else has everything they needed to be as productive as possible. A huge part of this just means answering every freaking question ASA-FREAKING-P so that "blocked while waiting for feedback" doesn't happen, even if your "answer" is just "go talk to this other person who knows more about that particular area."
+My #1 absolute top priority as tech lead for any given project is to make sure everyone else has everything they needed to be as productive as possible. A huge part of this just means answering every freaking question ASA-FREAKING-P so that "blocked while waiting for feedback" doesn't happen, even if your "answer" is just "go talk to this other person who knows more about that particular area."
 
 Staying this responsive is easy when your team is a few people, but as we all know, lots of projects don't have the luxury of a tight knit dev team where everyone understands the intricate details of what everyone else is working on. My most recent project topped out at 15 developers (plus PMs, the QA team, Product Managers, analysts, etc., bringing the grand total up to about 30), and half of them worked for the client. With a project like that, you find yourself spending the entire day in email and IMs. Otherwise, the questions start getting backed up and people start floundering while they wait on answers.
 
@@ -98,4 +98,4 @@ So you have a few options, and it's up to you (and your team, and your project's
 
 Once that happens, it's important to try really really hard to stick with it. If you decide to rely on docs heavily but fail to update them early and often, then begging your team to refer to them isn't going to earn their trust in them. If you prioritize doing your own assigned work over helping others, then begging your team to work harder to get questions answered and blockers resolved quickly won't do you much good, because you already made that sacrifice.
 
-Choose once, and choose wisely. And if you forget to choose wisely, then choose again!"
+Choose once, and choose wisely. And if you forget to choose wisely, then choose again!

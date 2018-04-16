@@ -8,7 +8,7 @@ tags:
   - drupal
 ---
 
-"It’s common practice for people who use open source software (including Drupalers, _ahem ahem_) to submit back to the community for the sake of the others building and using that software. It’s the right thing to do, it’s what open source is all about, and so on – you’ve heard that all before. But sometimes it’s hard to bite that particular bullet if you don’t see any personal value to you.
+It’s common practice for people who use open source software (including Drupalers, _ahem ahem_) to submit back to the community for the sake of the others building and using that software. It’s the right thing to do, it’s what open source is all about, and so on – you’ve heard that all before. But sometimes it’s hard to bite that particular bullet if you don’t see any personal value to you.
 
 I’m here to tell you about how giving back to the community can actually help you directly, right now, with the real-life projects that you’re working on at this very moment.
 
@@ -76,4 +76,4 @@ Yeah, I hear you. In cases like that, you’re kind of stuck. But did you talk t
 
 This is true, but keep in mind that the vast majority of the open source community will, upon finding a security bug, report it responsibly. That isn’t necessarily true for the type of people who are crawling around the internet searching for security issues on live sites. I would make a case that this is more of a pro than a con. The community can catch your security issues before they’re exploited. If you don’t open source it, it’s just going to keep sitting there in production, waiting to be exploited.
 
-What concerns do you have? Let us know in the comments!"
+What concerns do you have? Let us know in the comments!

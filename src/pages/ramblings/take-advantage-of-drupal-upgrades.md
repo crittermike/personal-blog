@@ -8,7 +8,7 @@ tags:
   - drupal
 ---
 
-"Drupal's upgrade mantra has always been "we will break your code but we won't break your data" and for that reason, Drupal core and contrib maintainers typically spend a lot of time and effort in providing upgrade paths for your data so you can theoretically just run the upgrade script and update your code and you're good to go.
+Drupal's upgrade mantra has always been "we will break your code but we won't break your data" and for that reason, Drupal core and contrib maintainers typically spend a lot of time and effort in providing upgrade paths for your data so you can theoretically just run the upgrade script and update your code and you're good to go.
 
 In practice, this is rarely the case. We all know that Drupal major version upgrades (like D6 to D7) are no picnic. Lots of contrib modules don't have decent upgrade paths or do not exist at all for the newest Drupal version forcing you to find a replacement. Any code code you have that stores data will likely need to have custom update hooks written for it as well.
 
@@ -47,4 +47,4 @@ Also, doing it this way (with a migrate script rather than the upgrade script) m
 
 The only clear disadvantage here is time. It can be a little quicker to do the classic upgrade rather than doing a from scratch build and migration (though often not as much as you'd think). However, my rebuttal to this is that the time you spend now will be time saved later since you're ridding yourself of technical debt and you're fixing issues that need fixing rather than just cloning the site.
 
-**Did I miss anything? [Tweet me](http://twitter.com/mcrittenden) if so.**"
+**Did I miss anything? [Tweet me](http://twitter.com/mcrittenden) if so.**
