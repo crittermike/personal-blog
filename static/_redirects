@@ -1,0 +1,4 @@
+# Redirects from what the browser requests to what we serve
+/feed/drupal-planet           /drupal-planet.xml
+/blog                         /
+/side-projects                /about
