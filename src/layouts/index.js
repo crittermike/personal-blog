@@ -1,20 +1,34 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import Header from '../components/Header'
+import PostHeader from '../components/PostHeader'
+import Footer from '../components/Footer'
+import PostFooter from '../components/PostFooter'
 
-import Navbar from '../components/Navbar'
-import './all.sass'
+import './all.css'
 
-const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet title="Home | Gatsby + Netlify CMS" />
-    <Navbar />
-    <div>{children()}</div>
-  </div>
-)
+require("prismjs/themes/prism-tomorrow.css");
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+class Template extends React.Component {
+    render() {
+        const { location, children } = this.props
+        let header, footer;
+
+        if (location.pathname === '/') {
+            header = ( <Header/> )
+            footer = ( <Footer/> )
+        } else {
+            header = ( <PostHeader/> );
+            footer = ( <PostFooter/> );
+        }
+        return (
+            <div className="container">
+                {header}
+                {children()}
+                {footer}
+            </div>
+        )
+    }
 }
 
-export default TemplateWrapper
+export default Template
+

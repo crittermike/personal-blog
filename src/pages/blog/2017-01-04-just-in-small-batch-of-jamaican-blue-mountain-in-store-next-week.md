@@ -61,7 +61,7 @@ In Drupal, creating custom fields happens in the UI.
 
 In Grav, to create custom fields for a given page type, you’ll do it in a YAML file. Grav calls this a “Blueprint”. Just create a file in /user/blueprints/pages/PAGETYPE.yaml and throw in something like this:
 
-```
+```yaml
 title: PAGETYPE
 '@extends':
     type: default
