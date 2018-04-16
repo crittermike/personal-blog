@@ -1,11 +1,11 @@
 module.exports = {
     siteMetadata: {
-        title: 'Mike Crittenden\'s blog',
+        title: `Mike Crittenden`,
         description: `Random ramblings and observations by Mike Crittenden`,
         siteUrl: `https://mikecr.it`
     },
     plugins: [
-        'gatsby-plugin-react-helmet',
+        `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-plugin-google-fonts`,
             options: {
@@ -22,29 +22,29 @@ module.exports = {
             },
         },
         {
-            resolve: 'gatsby-source-filesystem',
+            resolve: `gatsby-source-filesystem`,
             options: {
                 path: `${__dirname}/src/pages`,
-                name: 'pages',
+                name: `pages`,
             },
         },
         {
-            resolve: 'gatsby-source-filesystem',
+            resolve: `gatsby-source-filesystem`,
             options: {
                 path: `${__dirname}/src/img`,
-                name: 'images',
+                name: `images`,
             },
         },
         {
-            resolve: 'gatsby-transformer-remark',
+            resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [
-                    'gatsby-remark-prismjs',
+                    `gatsby-remark-prismjs`,
                 ],
             },
         },
         {
-            resolve: 'gatsby-plugin-netlify-cms',
+            resolve: `gatsby-plugin-netlify-cms`,
             options: {
                 modulePath: `${__dirname}/src/cms/cms.js`,
             },
