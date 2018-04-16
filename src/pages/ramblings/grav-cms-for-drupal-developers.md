@@ -1,21 +1,21 @@
 ---
 templateKey: blog-post
 title: Grav CMS for Drupal Developers
-date: 2017-05-08T10:04:10-04:00
-description: >-
-  Learn about Grav CMS in terms that you'll understand, as a smart, good looking
-  Drupal developer.
+date: 2017-05-08
+description: An intro to Grav in terms Drupal devs can relate to.
 tags:
+  - development
   - drupal
 ---
-If you've never heard of it, Grav is a pretty neat little flat-file CMS. If you're a Drupal developer, words like "flat-file" and "neat" and "little" are probably foreign to you. This post is an attempt to explain what Grav is, why it's neat, and how to use it, in terms that you'll understand.
+
+"If you've never heard of it, Grav is a pretty neat little flat-file CMS. If you're a Drupal developer, words like ""flat-file"" and ""neat"" and ""little"" are probably foreign to you. This post is an attempt to explain what Grav is, why it's neat, and how to use it, in terms that you'll understand.
 
 Wait, what's wrong with just using Drupal?
 ------------------------------------------
 
 Why would anyone EVER think of leaving our beloved Drupal in the ditch to use something else?!
 
-> "If you want to build a small web site, I'm not sure it makes sense to use Drupal today. It's good for… ambitious sites." [#driesnote](https://twitter.com/hashtag/driesnote?src=hash)
+> ""If you want to build a small web site, I'm not sure it makes sense to use Drupal today. It's good for… ambitious sites."" [#driesnote](https://twitter.com/hashtag/driesnote?src=hash)
 > 
 > — Actually, (@eaton) [April 25, 2017](https://twitter.com/eaton/status/856862735820353536)
 
@@ -46,7 +46,7 @@ You can also still have dynamic content listings, send emails, redirect users, i
 Content types in Drupal = Page Types in Grav
 --------------------------------------------
 
-Let's start with the basics - the age old "content type." In Drupal, creating a content type happens in the UI.
+Let's start with the basics - the age old ""content type."" In Drupal, creating a content type happens in the UI.
 
 In Grav, to create a content type, you just create a “whatever.html.twig” file in the templates/ directory of your theme. Doing that automatically tells Grav that “Whatever” should be a new Page type.
 
@@ -61,7 +61,6 @@ In Drupal, creating custom fields happens in the UI.
 
 In Grav, to create custom fields for a given page type, you’ll do it in a YAML file. Grav calls this a “Blueprint”. Just create a file in /user/blueprints/pages/PAGETYPE.yaml and throw in something like this:
 
-```yaml
 title: PAGETYPE
 '@extends':
     type: default
@@ -78,7 +77,6 @@ form:
             header.subheading:
               type: text
               label: Subheading
-```
 
 Basically, that will add two new text fields (“Heading” and “Subheading”) to the “Content” tab of the form for that page type.
 
@@ -95,7 +93,6 @@ In Drupal, creating a content listing happens (usually) in the Views UI.
 
 In Grav, there’s the concept of a “Collection” which allows you to loop through and list arbitrary content. Here’s an example:
 
-```
 content:
     items: @self.children
     order:
@@ -103,16 +100,13 @@ content:
         dir: desc
     limit: 10
     pagination: true
-```
 
 And then in the Twig template, you’d just loop through them like so:
 
-```
 {% for p in page.collection %}
     <h2>{{ p.title }}</h2>
     {{ p.summary }}
 {% endfor %}
-```
 
 Collections support lots of the same filtering/sorting/pagination concepts that Views supports. Some of the more complex stuff (such as fields from relationships or exposed filters) would have to be custom built via a plugin, but this should handle most of the things you’d typically use Views for pretty well.
 
@@ -129,18 +123,14 @@ In Drupal, creating a Taxonomy happens in the blah blah blah you get the idea. A
 
 In Grav, creating a Taxonomy just means adding it to your site.yaml config file, like so:
 
-```
 taxonomies: \[category,tag\]
-```
 
 Just add it to that array and you’ve created a new taxonomy. Then, you can reference it from any given page like this, in the YAML Frontmatter:
 
-```
 title: Post title
 taxonomy:
     tag: \[animal, dog\]
     category: pets
-```
 
 And that’s it. Taxonomies are MUCH simpler in Grav than in Drupal. They aren’t fieldable, for example (without some customization). They’re basically just a way to group content together, so that you can create listings (“Collections”) out of them.
 
@@ -164,7 +154,7 @@ This is one area where Grav really shines.
 
 In Drupal, shipping a distribution mostly involves doing work to make sure that a site has everything it need in code and exported configuration, and installs correctly using the installer. This is a result of Drupal relying on a database, but not wanting to ship an exported copy of that database with the distribution.
 
-In Grav, since there’s no database, a “distribution” (or a "Skeleton" in Grav-speak) is basically just a copy of the codebase. Grav has no notion of "installation" like Drupal's installer. Just copy the codebase to another web root somewhere and it’s ready to run. This means that it’s really easy to ship open source Skeletons, many of which are [available here](https://getgrav.org/downloads/skeletons).
+In Grav, since there’s no database, a “distribution” (or a ""Skeleton"" in Grav-speak) is basically just a copy of the codebase. Grav has no notion of ""installation"" like Drupal's installer. Just copy the codebase to another web root somewhere and it’s ready to run. This means that it’s really easy to ship open source Skeletons, many of which are [available here](https://getgrav.org/downloads/skeletons).
 
 (It’s a tiny bit more nuanced than that since all you really need is the /user directory of the codebase which is where all the custom code is stored, but you get the idea).
 
@@ -173,11 +163,11 @@ In Grav, since there’s no database, a “distribution” (or a "Skeleton" in G
 Paragraphs in Drupal = Modular Pages in Grav (kind of)
 ------------------------------------------------------
 
-If you aren't familiar, Paragraphs is a very popular Drupal module that lets you build content in arbitrary "slices", each of which can contain arbitrary fields.
+If you aren't familiar, Paragraphs is a very popular Drupal module that lets you build content in arbitrary ""slices"", each of which can contain arbitrary fields.
 
-Grav has the concept of Modular Pages, which is pretty similar. Basically, a Modular Page is just a collection of other pages, but those "other pages" aren't reachable on their own, and they're special types that are made specifically for being placed into Modular Pages.
+Grav has the concept of Modular Pages, which is pretty similar. Basically, a Modular Page is just a collection of other pages, but those ""other pages"" aren't reachable on their own, and they're special types that are made specifically for being placed into Modular Pages.
 
-For example, a Modular Page being used as the homepage may be comprised of a Slideshow page, then a Feature List page, then an Image With Caption page, etc., and none of those sub-pages are actual pages that are reachable on their own. So even though they're called "pages", it's basically the same idea as Paragraphs.
+For example, a Modular Page being used as the homepage may be comprised of a Slideshow page, then a Feature List page, then an Image With Caption page, etc., and none of those sub-pages are actual pages that are reachable on their own. So even though they're called ""pages"", it's basically the same idea as Paragraphs.
 
 The UI for this is different since each of those sub-pages are editable on separate forms instead of all of them being in the same form like how Paragraphs does it, but you can accomplish most of the same things this way.
 
@@ -214,10 +204,10 @@ There are a few things to keep in mind if you’re looking at using Grav for a p
 
 One is that Grav doesn’t scale nearly as well. Many Drupal sites have many millions of nodes, thanks to the usage of a database. In general, I probably wouldn’t suggest using Grav once you start getting into the thousands with page count. Performance will likely start to suffer.
 
-Drupal also really shines in creating complex content models, where there are many types of nodes/entities which reference each other or embed each other or reuse each other's fields, etc. Grav is perhaps more "page focused" than "data focused", which makes it much easier to work with for many sites, but not a great fit for some sites that need those complex relationships.
+Drupal also really shines in creating complex content models, where there are many types of nodes/entities which reference each other or embed each other or reuse each other's fields, etc. Grav is perhaps more ""page focused"" than ""data focused"", which makes it much easier to work with for many sites, but not a great fit for some sites that need those complex relationships.
 
 Grav also doesn’t really have the notion of an editorial workflow or moderation system. It does support published vs. unpublished, and there are things like [Git Sync](https://getgrav.org/blog/git-sync-plugin) to auto-deploy from a staging environment (or your local site) to a production environment if you set it up to do so, but there’s no approval process along the lines of what Drupal and some modules can provide.
 
 Obviously, Grav also isn’t going to have anywhere near the amount of 3rd party plugins (modules) that Drupal has. Things like integration with web services or commonly used libraries will have to be hooked up yourself, more often than not. That said, the API is solid and the [documentation for it](https://learn.getgrav.org/api/) is legit.
 
-That’s by no means an exhaustive list, but it's about all I’ve found so far. For your typical small to medium sized sites, Grav can be a really great solution that cuts out some of the overhead of a typical Drupal site. Recommended!
+That’s by no means an exhaustive list, but it's about all I’ve found so far. For your typical small to medium sized sites, Grav can be a really great solution that cuts out some of the overhead of a typical Drupal site. Recommended!"

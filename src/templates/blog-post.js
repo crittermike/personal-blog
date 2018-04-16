@@ -25,7 +25,10 @@ export const BlogPostTemplate = ({
         {tags && tags.length ? (
           <div>
             <p>Tags:&nbsp;
-              {tags.map(tag => ( <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link> ))}
+              {tags.map(tag => (
+                  <span>
+                    <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>&nbsp;
+                  </span> ))}
              </p>
           </div>
         ) : null}
