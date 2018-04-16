@@ -5,7 +5,7 @@ import Link from 'gatsby-link'
 const Header = (props) => (
     <div>
         <h1><Link to={'/'}>Mike Crittenden</Link></h1>
-        <p>Ramblings and stuff. <a href="https://twitter.com/mcrittenden">Follow me on Twitter?</a></p><br /><br /><br />
+        <p>You should hire me for <a href="http://littlebluelabs.com">Drupal consulting</a> or <a href="http://drupalcheck.com">Drupal site audits</a>!</p><br /><br /><br />
     </div>
 )
 

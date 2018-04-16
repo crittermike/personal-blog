@@ -20,6 +20,10 @@ a {
     border-bottom: 2px solid #FF5964;
 }
 
+img {
+    width: 100%;
+}
+
 a:hover {
     background: #FF5964;
 }
