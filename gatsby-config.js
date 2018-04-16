@@ -49,5 +49,60 @@ module.exports = {
                 modulePath: `${__dirname}/src/cms/cms.js`,
             },
         },
+        {
+            resolve: `gatsby-plugin-feed`,
+            options: {
+                feeds: [
+                    {
+                        query: `
+                            {
+                              allMarkdownRemark(
+                                limit: 1000,
+                                sort: { order: DESC, fields: [frontmatter___date] },
+                                filter: {frontmatter: { tags: { eq: "drupal" } }}
+                              ) {
+                                edges {
+                                  node {
+                                    excerpt
+                                    html
+                                    fields { slug }
+                                    frontmatter {
+                                      title
+                                      date
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          `,
+                        output: "/drupal-planet.xml",
+                    },
+                    {
+                        query: `
+                            {
+                              allMarkdownRemark(
+                                limit: 1000,
+                                sort: { order: DESC, fields: [frontmatter___date] },
+                                filter: {frontmatter: { templateKey: { eq: "blog-post" } }}
+                              ) {
+                                edges {
+                                  node {
+                                    excerpt
+                                    html
+                                    fields { slug }
+                                    frontmatter {
+                                      title
+                                      date
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          `,
+                        output: "/rss.xml",
+                    }
+                ],
+            },
+        },
     ],
 }
