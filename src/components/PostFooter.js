@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import Footer from './Footer'
 
 const PostFooter = () => (
-    <div>
+    <div><br />
         <h3><Link to={'/'}>← Home</Link></h3>
         <Footer/>
     </div>
