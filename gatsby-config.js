@@ -69,7 +69,7 @@ module.exports = {
                               }
                             }
                           `,
-                        output: "/feed/drupal-planet",
+                        output: "/drupal-planet.xml",
                     },
                     {
                         serialize: ({ query: { site, allMarkdownRemark } }) => {
