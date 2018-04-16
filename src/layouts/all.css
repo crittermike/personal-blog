@@ -6,7 +6,6 @@ body {
     line-height: 1.6;
 }
 
-
 .container {
     max-width: 800px;
     width: 100%;
@@ -23,6 +22,24 @@ a {
 
 a:hover {
     background: #FF5964;
+}
+
+.teaser {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .teaser {
+        display: block;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .teaser h3,
+    .teaser p {
+        margin: 0;
+    }
 }
 
 pre[class*="language-"],
