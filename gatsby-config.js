@@ -56,6 +56,14 @@ module.exports = {
                     {
                         query: `
                             {
+                              site {
+                                siteMetadata {
+                                  title
+                                  description
+                                  siteUrl
+                                  site_url: siteUrl
+                                }
+                              }
                               allMarkdownRemark(
                                 limit: 1000,
                                 sort: { order: DESC, fields: [frontmatter___date] },
@@ -80,6 +88,14 @@ module.exports = {
                     {
                         query: `
                             {
+                              site {
+                                siteMetadata {
+                                  title
+                                  description
+                                  siteUrl
+                                  site_url: siteUrl
+                                }
+                              }
                               allMarkdownRemark(
                                 limit: 1000,
                                 sort: { order: DESC, fields: [frontmatter___date] },
