@@ -1,6 +1,8 @@
 module.exports = {
     siteMetadata: {
-        title: 'Gatsby + Netlify CMS Starter',
+        title: 'Mike Crittenden\'s blog',
+        description: `Random ramblings and observations by Mike Crittenden`,
+        siteUrl: `https://mikecr.it`
     },
     plugins: [
         'gatsby-plugin-react-helmet',
@@ -12,6 +14,98 @@ module.exports = {
                     `josefin sans`
                 ]
             }
+        },
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                trackingId: "UA-6322775-21",
+            },
+        },
+        {
+            resolve: `gatsby-plugin-feed`,
+            options: {
+                query: `
+                    {
+                      site {
+                        siteMetadata {
+                          title
+                          description
+                          siteUrl
+                          site_url: siteUrl
+                        }
+                      }
+                    }
+                  `,
+                feeds: [
+                    {
+                        serialize: ({ query: { site, allMarkdownRemark } }) => {
+                            return allMarkdownRemark.edges.map(edge => {
+                                return Object.assign({}, edge.node.frontmatter, {
+                                    description: edge.node.excerpt,
+                                    url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                                    guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                                    custom_elements: [{ "content:encoded": edge.node.html }],
+                                });
+                            });
+                        },
+                        query: `
+                            {
+                              allMarkdownRemark(
+                                limit: 1000,
+                                sort: { order: DESC, fields: [frontmatter___date] },
+                                filter: {frontmatter: { tags: { eq: "drupal" } }}
+                              ) {
+                                edges {
+                                  node {
+                                    excerpt
+                                    html
+                                    fields { slug }
+                                    frontmatter {
+                                      title
+                                      date
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          `,
+                        output: "/feed/drupal-planet",
+                    },
+                    {
+                        serialize: ({ query: { site, allMarkdownRemark } }) => {
+                            return allMarkdownRemark.edges.map(edge => {
+                                return Object.assign({}, edge.node.frontmatter, {
+                                    description: edge.node.excerpt,
+                                    url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                                    guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                                    custom_elements: [{ "content:encoded": edge.node.html }],
+                                });
+                            });
+                        },
+                        query: `
+                            {
+                              allMarkdownRemark(
+                                limit: 1000,
+                                sort: { order: DESC, fields: [frontmatter___date] },
+                              ) {
+                                edges {
+                                  node {
+                                    excerpt
+                                    html
+                                    fields { slug }
+                                    frontmatter {
+                                      title
+                                      date
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          `,
+                        output: "/rss.xml",
+                    },
+                ],
+            },
         },
         'gatsby-plugin-sass',
         {
