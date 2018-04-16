@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
 
 import PostTeaser from '../components/PostTeaser'
 
@@ -10,6 +11,7 @@ export default class IndexPage extends React.Component {
 
     return (
         <div>
+          <Helmet title="Mike Crittenden's Blog" />
           {posts.filter(post => post.node.frontmatter.templateKey === 'blog-post')
             .map(({ node: post }) => (
               <PostTeaser post={post}/>

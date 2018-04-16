@@ -53,7 +53,7 @@ const BlogPost = ({ data }) => {
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
+      helmet={<Helmet title={`${post.frontmatter.title} | Mike Crittenden's Blog`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
       date={post.frontmatter.date}
