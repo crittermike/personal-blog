@@ -24,7 +24,8 @@ a:hover {
     background: #FF5964;
 }
 
-pre[class*="language-"] {
+pre[class*="language-"],
+code[class*="language-"] {
     font-size: 14px;
     border-radius: 0;
 }
