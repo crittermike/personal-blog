@@ -31,6 +31,11 @@ a:hover {
 .teaser {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.footerlinks {
+    text-align: center;
 }
 
 @media (max-width: 767px) {
