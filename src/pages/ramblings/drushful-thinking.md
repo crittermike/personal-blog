@@ -64,7 +64,7 @@ Or maybe we need to do a bunch of aliased commands, but we want to do it without
 
     drush site-set @foo-dev
 
-And then when we're done doing what we do, we can just run it again without the ""@foo-dev"" argument to unset it.
+And then when we're done doing what we do, we can just run it again without the "@foo-dev" argument to unset it.
 
 Now, keep reading, sailor.
 
@@ -91,7 +91,7 @@ Sometimes you want to drop your entire database before importing, to make sure y
 
     drush sql-drop
 
-Sometimes, it's useful to be able to automate running arbitrary SQL commands on multiple environments, and that's pretty easy too. Say for example that you quickly want to get the username for uid 1 on the prod environment (the ""drush user-information"" command would be much better for this, but shut up).
+Sometimes, it's useful to be able to automate running arbitrary SQL commands on multiple environments, and that's pretty easy too. Say for example that you quickly want to get the username for uid 1 on the prod environment (the "drush user-information" command would be much better for this, but shut up).
 
     drush @foo-prod sqlq 'select name from users where uid = 1'
 
@@ -102,7 +102,7 @@ Drupal Without Drupal
 
 It's often useful to run one-off arbitrary code within the context of Drupal, without having to actually put it in the codebase somewhere. This is typically done one of two ways:
 
-If it's just a short one-liner, then there's the ever-useful ""php-eval"" (aka ""ev"") command. For example, let's inspect a node object.
+If it's just a short one-liner, then there's the ever-useful "php-eval" (aka "ev") command. For example, let's inspect a node object.
 
     drush @foo-dev php-eval 'print\_r(node\_load(123));'
 
@@ -123,10 +123,10 @@ There are a lot of useful options for watchdog-show, such as:
 
 *   --tail (continuously show new messages)
 *   --full (show the full output, with all of the fields, instead of the summarized version)
-*   --severity (such as ""--severity=error"")
-*   --count (show more than the default 10, such as ""--count=100"")
+*   --severity (such as "--severity=error")
+*   --count (show more than the default 10, such as "--count=100")
 
-And I'd bet you're familiar with ""drush vget"" to get variables, but did you know you can pass ""--format=whatever"" to get the results formatted as JSON or CSV or YAML or a bunch of other things, for easy scripting?
+And I'd bet you're familiar with "drush vget" to get variables, but did you know you can pass "--format=whatever" to get the results formatted as JSON or CSV or YAML or a bunch of other things, for easy scripting?
 
 Another one of my favorites is this charm, which basically prints out the stuff you see on the Status Report page in Drupal. It's nice for sanity checking before pushing releases live.
 
@@ -153,14 +153,14 @@ Or, if you're slightly less lazy, and just want to change the password to someth
 
     drush user-password name-or-uid --password=test1234
 
-Then there's the ""fun"" process of adding a user and filling out the form. Skip that:
+Then there's the "fun" process of adding a user and filling out the form. Skip that:
 
-    drush user-create person123 --mail=""what@isthis.com"" --password=""letmein""
+    drush user-create person123 --mail="what@isthis.com" --password="letmein"
 
 Once that's done, you probably want to give that new user some roles. For role stuff, you have this:
 
-    drush user-add-role ""user editor"" person123
-    drush user-remove-role ""user editor"" person123
+    drush user-add-role "user editor" person123
+    drush user-remove-role "user editor" person123
 
 But watch out! The role you need to add doesn't exist yet! Let's add it, and give it some permissions.
 
@@ -231,7 +231,7 @@ Have you ever been in the middle of debugging and you know that something is hap
 drush fn-hook form_alter
 ```
 
-And finally, this bad boy is basically ""Drush docs in a box"" and has a TON of useful info. Seriously, try it now.
+And finally, this bad boy is basically "Drush docs in a box" and has a TON of useful info. Seriously, try it now.
 
 ```
 drush topic
@@ -242,7 +242,7 @@ Drushful Thinking
 
 There's a giant heap of useful Drush commands, some of which you hopefully hadn't seen before. So what, right?
 
-The ""so what"" is that it's useful to start thinking in terms of ""how can Drush do this for me?"" and you'll often find that the answer is ""pretty easily.""
+The "so what" is that it's useful to start thinking in terms of "how can Drush do this for me?" and you'll often find that the answer is "pretty easily."
 
 Play a game with yourself. Next time you're working on site building or anything that involves a lot of clicky clicky in the Drupal UI, give yourself a jellybean or a chip or something every time you do something in Drush instead of in the UI.
 

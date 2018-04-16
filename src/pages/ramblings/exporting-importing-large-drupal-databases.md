@@ -8,7 +8,7 @@ tags:
   - drupal
 ---
 
-"Once your site's database dump file gets to be 1GB or more, phrases like ""oh, just download and import a DB dump"" can't really be taken for granted anymore. So here are some tips for dealing with large databases, especially those of the Drupal variety.
+"Once your site's database dump file gets to be 1GB or more, phrases like "oh, just download and import a DB dump" can't really be taken for granted anymore. So here are some tips for dealing with large databases, especially those of the Drupal variety.
 
 Exporting
 ---------
@@ -56,7 +56,7 @@ For those cases where you need the database _structure_ for all of the tables, b
 mysqldump --no-data database_name > /export.sql
 ```
 
-Just replace ""table\_name1"" and ""table\_name2"" with the tables that you want to skip, and you're golden. Also note that you can use the % character as a wildcard, so for example, you could ignore ""cache%"" for all cache tables.
+Just replace "table\_name1" and "table\_name2" with the tables that you want to skip, and you're golden. Also note that you can use the % character as a wildcard, so for example, you could ignore "cache%" for all cache tables.
 
 After you do that, you'll have a single export.sql file that contains the DB structure for all tables and the DB data for all tables except the ones you excluded. Then, you'll probably want to compress it...
 
@@ -105,17 +105,17 @@ If you receive a DB dump that has a lot of data you don't need (caches, sessions
 
 ```bash
 gunzip -c db.sql.gz
-     | grep -Ev ""^INSERT INTO \`(cache_|search_index|sessions)""
+     | grep -Ev "^INSERT INTO \`(cache_|search_index|sessions)"
      | drush sqlc
 ```
 
-What this is doing is using ""grep"" as a middleman and saying ""skip any lines that are insertion lines for these specific tables we don't care about"". You can edit what's in the parenthesis to add/remove tables as needed.
+What this is doing is using "grep" as a middleman and saying "skip any lines that are insertion lines for these specific tables we don't care about". You can edit what's in the parenthesis to add/remove tables as needed.
 
 ### Monitor import progress
 
 There's nothing worse than just sitting and waiting and having no idea how far along the import has made it. Monitoring progress makes a long import seem faster, because there's no wondering. 
 
-If you have the ability to install it (from Homebrew or apt-get or whatever), the ""pv"" (Pipe Viewer) command is great here:
+If you have the ability to install it (from Homebrew or apt-get or whatever), the "pv" (Pipe Viewer) command is great here:
 
 ```bash
 pv db.sql | drush sqlc
@@ -127,12 +127,12 @@ Or if your database is compressed:
 pv db.sql.gz | gunzip | drush sqlc
 ```
 
-Using ""pv"" will show you a progress bar and a completion percentage. It's pretty awesome.
+Using "pv" will show you a progress bar and a completion percentage. It's pretty awesome.
 
-If you don't have ""pv"" then you can settle for the poor man's version:
+If you don't have "pv" then you can settle for the poor man's version:
 
 ```bash
-watch ""mysql database_name -Be 'SHOW TABLES' | tail -n2""
+watch "mysql database_name -Be 'SHOW TABLES' | tail -n2"
 ```
 
 That slick little guy will show you the table that is currently importing, and auto-updates as it runs, so you can at least see how far through the table list it has gone.
@@ -143,4 +143,4 @@ Tools and Resource
 In this post I tried to focus on commands that everyone already has. If this just isn't cutting it for you, then look into these tools which could help even more:
 
 *   [SyncDB](https://www.drupal.org/project/syncdb) \- a couple Drush commands that split DB dumps into separate files and import them in parallel, drastically speeding things up
-*   [Drush SQL Sync Pipe](https://www.drupal.org/project/drush_sql_sync_pipe) \- an alternative to ""drush sql-sync"" that uses pipes where possible to speed things up"
+*   [Drush SQL Sync Pipe](https://www.drupal.org/project/drush_sql_sync_pipe) \- an alternative to "drush sql-sync" that uses pipes where possible to speed things up"

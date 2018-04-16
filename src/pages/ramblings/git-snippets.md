@@ -27,7 +27,7 @@ git checkout <OTHER_BRANCH> -- path/to/file.txt
 Delete already-merged git branches (except for specific ones you name):
 
 ```bash
-git branch --merged | grep -v ""\*"" | grep -v master | grep -v develop | grep -v release | xargs -n 1 git branch -d
+git branch --merged | grep -v "\*" | grep -v master | grep -v develop | grep -v release | xargs -n 1 git branch -d
 ```
 
 View the git log for a specific line or number of lines in a file:
@@ -61,7 +61,7 @@ git stash
 git checkout name-of-the-correct-branch
 git stash pop
 git add .
-git commit -m ""your message here""
+git commit -m "your message here"
 
 # now your changes are on the correct branch
 ```

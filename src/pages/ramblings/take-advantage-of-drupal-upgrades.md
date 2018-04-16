@@ -8,7 +8,7 @@ tags:
   - drupal
 ---
 
-"Drupal's upgrade mantra has always been ""we will break your code but we won't break your data"" and for that reason, Drupal core and contrib maintainers typically spend a lot of time and effort in providing upgrade paths for your data so you can theoretically just run the upgrade script and update your code and you're good to go.
+"Drupal's upgrade mantra has always been "we will break your code but we won't break your data" and for that reason, Drupal core and contrib maintainers typically spend a lot of time and effort in providing upgrade paths for your data so you can theoretically just run the upgrade script and update your code and you're good to go.
 
 In practice, this is rarely the case. We all know that Drupal major version upgrades (like D6 to D7) are no picnic. Lots of contrib modules don't have decent upgrade paths or do not exist at all for the newest Drupal version forcing you to find a replacement. Any code code you have that stores data will likely need to have custom update hooks written for it as well.
 
@@ -18,7 +18,7 @@ In other words, Drupal major version upgrades are a big time suck. You're rewrit
 
 ### Missed opportunities
 
-According to Jeffrey Zeldman, ""redesigning without fixing problems is a missed opportunity."" Along those lines, I think that upgrading your Drupal site without fixing problems is a missed opportunity.
+According to Jeffrey Zeldman, "redesigning without fixing problems is a missed opportunity." Along those lines, I think that upgrading your Drupal site without fixing problems is a missed opportunity.
 
 Why upgrade your site to an exact clone of itself when you could just as easily improve and simplify the problematic parts? You're already rewriting code and tweaking data, so you might as well use that to your advantage instead of just porting your existing site to a new version, warts and all.
 
@@ -39,7 +39,7 @@ The benefits should be clear here. With any second attempt at something, you go 
 
 Or maybe your old site didn't even have any real issues (liar). Maybe you just want to use this opportunity for a redesign and IA overhaul. Either way, the end result here is that you get a better site and you don't have to inherit the old site's problems or legacy choices.
 
-It's worth pointing out that you can do this whenever you want, and you don't have to do it during an upgrade. You're always free to rebuild your site and make it better, but it's costly and it's time that you don't directly get paid for, so it's a tough sell. So the reason it works in this case is that you were already going to be spending a significant amount of time upgrading the site, so it's not time you're losing, it's just time that you're transferring from one objective (""upgrade"") to another (""upgrade and improve""), the latter being good for business and the former just being a necessary evil.
+It's worth pointing out that you can do this whenever you want, and you don't have to do it during an upgrade. You're always free to rebuild your site and make it better, but it's costly and it's time that you don't directly get paid for, so it's a tough sell. So the reason it works in this case is that you were already going to be spending a significant amount of time upgrading the site, so it's not time you're losing, it's just time that you're transferring from one objective ("upgrade") to another ("upgrade and improve"), the latter being good for business and the former just being a necessary evil.
 
 Also, doing it this way (with a migrate script rather than the upgrade script) means that _you can continually migrate in new or updated content as you're working_. This is especially useful on sites where content is constantly added, whether it's an active blog or a news site or a site with user comments or a forum, etc. If you upgrade with the upgrade script, then once the script is run, you basically have to lay down a content freeze since it's difficult to pull in any content that was added or edited to the old site after that unless you do it by copying and pasting.
 

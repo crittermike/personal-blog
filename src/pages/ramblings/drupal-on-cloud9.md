@@ -19,27 +19,27 @@ I've been using it heavily for a few months now, and here are the features that 
 
 ### Workspaces
 
-C9 gives you ""workspaces"", each of which is a complete Ubuntu-based environment (i.e., a Docker container behind the scenes). This means that you can install stuff, use `sudo`, change config, etc. You can create and delete workspaces as you please.
+C9 gives you "workspaces", each of which is a complete Ubuntu-based environment (i.e., a Docker container behind the scenes). This means that you can install stuff, use `sudo`, change config, etc. You can create and delete workspaces as you please.
 
 You can really go to town on these things in pretty much any way that is useful. 
 
 ### Workspace cloning
 
-C9 also lets you clone workspaces to create new ones. Cloning is super fast - usually around 30 seconds for me from start to finish. This means I can do things like having a stock ""Drupal"" workspace that has all the tools and config that I like to have for Drupal projects, which I just clone when setting up a new Drupal site. There are other cool possibilities here too, which I'll get to shortly.
+C9 also lets you clone workspaces to create new ones. Cloning is super fast - usually around 30 seconds for me from start to finish. This means I can do things like having a stock "Drupal" workspace that has all the tools and config that I like to have for Drupal projects, which I just clone when setting up a new Drupal site. There are other cool possibilities here too, which I'll get to shortly.
 
 Sure, theoretically Vagrant and friends let you do this already for local environments, but the speed and ease that C9 brings to this process is unmatched compared to anything I've seen.
 
 ### Out of the box debugging (for Node.js, PHP, Go, and C++)
 
-Interactive debugging is already there, waiting for you. In PHP for example, you just click the little ""bug"" icon before running your app, and then set a breakpoint wherever you want. No messing with xdebug config or path mappings or exposing ports, none of that. Just click and you're done.
+Interactive debugging is already there, waiting for you. In PHP for example, you just click the little "bug" icon before running your app, and then set a breakpoint wherever you want. No messing with xdebug config or path mappings or exposing ports, none of that. Just click and you're done.
 
 This is especially nice for me on the Node.js side, since I've never learned how to set up a Node debugger and don't particularly want to.
 
 ### Custom runners
 
-Cloud9 environments come with some pre-configured ""runners"", which are basically commands that you can run by clicking a button, and have their output stuck into their own tabs. For example, starting the app typically means starting the ""Apache"" runner to get the server running, which will throw Apache logs into the output of that tab. 
+Cloud9 environments come with some pre-configured "runners", which are basically commands that you can run by clicking a button, and have their output stuck into their own tabs. For example, starting the app typically means starting the "Apache" runner to get the server running, which will throw Apache logs into the output of that tab. 
 
-That's all fine, but it gets more interesting when you create custom runners. You can drop in a name and command and some configuration such as the current directory, and then you have a nice little command runner waiting to be clicked. I like this for things like ""grunt watch"" which watches for Sass updates, but it's even more useful for commands with hard to remember names, so that you can kind of abstract that away. It's like shell aliases on steroids, in a way.
+That's all fine, but it gets more interesting when you create custom runners. You can drop in a name and command and some configuration such as the current directory, and then you have a nice little command runner waiting to be clicked. I like this for things like "grunt watch" which watches for Sass updates, but it's even more useful for commands with hard to remember names, so that you can kind of abstract that away. It's like shell aliases on steroids, in a way.
 
 ### Performance
 
@@ -66,11 +66,11 @@ For example, it's missing features like:
 
 ### Restricted workspace cloning
 
-You can only clone your own workspace - you can't clone someone else's. This means that it's basically impossible to have a setup where a tech lead manages a ""pristine"" project workspace which everyone else can clone whenever they need to start fresh, or when new people are ramped on. I love the sound of that workflow, and it's disappointing that it isn't allowed.
+You can only clone your own workspace - you can't clone someone else's. This means that it's basically impossible to have a setup where a tech lead manages a "pristine" project workspace which everyone else can clone whenever they need to start fresh, or when new people are ramped on. I love the sound of that workflow, and it's disappointing that it isn't allowed.
 
 ### Credit card required for signup
 
-You can't sign up to C9 without entering your credit card info, even for the free accounts. This isn't the end of the world for me or possibly for you, but it can be a real bummer when you want to give someone on your team access to your codebase to do some pair programming. The ""how much do I really want this?"" factor kicks into high gear when you're asked to pull out your credit card.
+You can't sign up to C9 without entering your credit card info, even for the free accounts. This isn't the end of the world for me or possibly for you, but it can be a real bummer when you want to give someone on your team access to your codebase to do some pair programming. The "how much do I really want this?" factor kicks into high gear when you're asked to pull out your credit card.
 
 Use cases
 ---------
@@ -99,7 +99,7 @@ One of the banner features of C9 is the ability to live-edit code along with oth
 
 ### Debugging
 
-The out of the box debugger support kind of automatically makes ""debugging"" a good use case for Cloud9. The fact that you have a full Ubuntu environment means that you can usually change whatever you need to change to replicate your prod setup, and the built in debugger can take it from there to help you find your bug.
+The out of the box debugger support kind of automatically makes "debugging" a good use case for Cloud9. The fact that you have a full Ubuntu environment means that you can usually change whatever you need to change to replicate your prod setup, and the built in debugger can take it from there to help you find your bug.
 
 Again, you can always just use Docker yourself to replicate an environment and install Xdebug, but this is just so much easier.
 
@@ -114,7 +114,7 @@ Finally, here are some tips for getting the most out of Cloud9, especially if yo
 
 **1\. Start each workspace from a starter instance that has all the tools you need**
 
-For example, create a ""Drupal"" starter workspace that has Drush, Drupal Console, Apache config, git aliases, XHprof (here are [installation instructions](https://gist.github.com/mikecrittenden/341a7ce1da019c1d2a22008e665c3565)), etc. Then, whenever you spin up a new site, just clone that workspace.
+For example, create a "Drupal" starter workspace that has Drush, Drupal Console, Apache config, git aliases, XHprof (here are [installation instructions](https://gist.github.com/mikecrittenden/341a7ce1da019c1d2a22008e665c3565)), etc. Then, whenever you spin up a new site, just clone that workspace.
 
 **2\. Create per-ticket workspaces**
 
@@ -126,7 +126,7 @@ Cloud9 has fully configurable keybindings for just about everything. This means 
 
 **4\. Create custom runners for all the things**
 
-Think of all the commands you run on a regular basis. Things like ""grunt watch"" or ""drush cc all"" or ""drush updb -y && drush fra -y"", etc. Put all of those things in custom runners, so you can just click a button to watch them run in their own tab. This is especially useful for complex commands that you're likely to forget.
+Think of all the commands you run on a regular basis. Things like "grunt watch" or "drush cc all" or "drush updb -y && drush fra -y", etc. Put all of those things in custom runners, so you can just click a button to watch them run in their own tab. This is especially useful for complex commands that you're likely to forget.
 
 **5\. Go crazy with the layout**
 

@@ -23,7 +23,7 @@ Drupal projects make the first 80% pretty easy and the last 20% really freaking 
 
 You're building a community site for shoelace enthusiasts. It contains a forum, a blog with commenting, some basic page content, media upload and browsing, photo albums, whatever. All the normal stuff that you see a lot.
 
-The interesting thing here is that Drupal allows you to build simple versions of all of that stuff really quickly in the GUI without having to do any real ""work"" (i.e., programming). You can have a working (for some definition of that word) site up in a matter of days or a couple weeks at most that satisfies the high level requirements.
+The interesting thing here is that Drupal allows you to build simple versions of all of that stuff really quickly in the GUI without having to do any real "work" (i.e., programming). You can have a working (for some definition of that word) site up in a matter of days or a couple weeks at most that satisfies the high level requirements.
 
 But of course, that's not good enough. We just have a bunch of generated markup dumped onto pages, which looks horrible and is nowhere near the mockups. We need theming, and we have a boat load of tweaks to make to functionality. This field needs to be split into two columns. That sidebar needs to only appear on pages that match a specific URL pattern. The blog needs to allow for customizing the sort order of the first 5 items. We need an extra wrapper div around a specific field so that our stupid 3rd party JS lib can find it. We need to add a custom exposed filter that Views doesn't support out of the box. We have to change the available values for a select list but Drupal is complaining that that field already has data. Drupal makes all of these things difficult because it has to, by nature of what Drupal is.
 
@@ -32,7 +32,7 @@ What we basically had after those first couple weeks is a prototype. Drupal is i
 A Typical Non-Drupal Project
 ----------------------------
 
-(First of all, this is pretty wishy washy because ""Non-Drupal"" can mean anything from Dreamweaver generated to whatever the latest Rails release is now. So bear with me and keep an open mind for now.)
+(First of all, this is pretty wishy washy because "Non-Drupal" can mean anything from Dreamweaver generated to whatever the latest Rails release is now. So bear with me and keep an open mind for now.)
 
 Remember when I said Drupal makes the first 80% really easy and the last 20% really hard? Well, you must know what's coming next then. 
 
@@ -40,7 +40,7 @@ _In general, non-Drupal projects tend to make the first 80% tougher than Drupal,
 
 It takes a while to create your DB structure, models or data structure, admin forms with things like WYSIWYG and image cropping, user authentication and permissions, content detail pages and listings, user facing forms, user registration and password reminders, comments on content items with threading, etc. All of that stuff can be a big pain, and there's drastically more manual work involved than with Drupal.
 
-But once you have that done, and you've reached the ""working"" site stage mentioned in the previous section, the rest is really easy. It's easy to split something into 2 columns when you wrote the markup in the first place. It's easy to alter behavior that you yourself defined in code. It's easy to decide when and where a sidebar should appear when you are the one that told it where/how to appear in the first place, in code.
+But once you have that done, and you've reached the "working" site stage mentioned in the previous section, the rest is really easy. It's easy to split something into 2 columns when you wrote the markup in the first place. It's easy to alter behavior that you yourself defined in code. It's easy to decide when and where a sidebar should appear when you are the one that told it where/how to appear in the first place, in code.
 
 Theming is quicker. Tweaks are quicker. Moving this thing into the footer and that thing into the sidebar is quicker. All of the types of things that tend to make up the last 20% of the project are just much easier to do than if you were using Drupal
 
@@ -63,9 +63,9 @@ So what?
 
 Why does it matter? Slow start and fast finish vs. fast start and slow finish, who cares as long as it all gets done eventually and in about the same amount of time?
 
-Well, clients care. You know how we're supposed to be under-promising and over-delivering? Using a fast start/slow finish approach makes this kind of tricky. Stakeholders often don't see ""percent complete"" in terms of hours spent vs. the budget, or time left until the deadline, or any of those actual numeric factors.
+Well, clients care. You know how we're supposed to be under-promising and over-delivering? Using a fast start/slow finish approach makes this kind of tricky. Stakeholders often don't see "percent complete" in terms of hours spent vs. the budget, or time left until the deadline, or any of those actual numeric factors.
 
-Instead, it often ends up just being a ""feel"" thing. Wow, the site already works, we're really moving fast! I think we may beat the deadline! It ""feels"" like we've gotten a lot done! We already can add/edit/delete content with all of these fields, and it all appears on the site, and it's only been 3 weeks! All that's left is the tweaking!
+Instead, it often ends up just being a "feel" thing. Wow, the site already works, we're really moving fast! I think we may beat the deadline! It "feels" like we've gotten a lot done! We already can add/edit/delete content with all of these fields, and it all appears on the site, and it's only been 3 weeks! All that's left is the tweaking!
 
 You see where I'm going with this? If you show that much visible progress to a not-super-technical client in the first few weeks, then they can expect that much visible progress on a regular basis. It's a bit disheartening as a client to see so much progress in a few weeks, and then only little bits at a time for the next few months.
 
@@ -76,7 +76,7 @@ Yeah yeah, everything sucks, but what can we do about it? Sadly, I don't think t
 
 One thing that can help is to make more of a focus on feature-based scheduling. If you're starting the project by having everyone lay the foundation (fields, content types, listing pages, etc.) for _all_ of the features, then iterating on top of that by theming _all_ of the features, then you run into the problems described above. That's no good.
 
-But if you get everyone working on the _same_ feature (or 2 or 3 features if you have a really big team), and push it through from start to finish before moving onto the next thing, then that at least gets you to ""complete"" with a specific thing more quickly than if you sort of built them all out at once.
+But if you get everyone working on the _same_ feature (or 2 or 3 features if you have a really big team), and push it through from start to finish before moving onto the next thing, then that at least gets you to "complete" with a specific thing more quickly than if you sort of built them all out at once.
 
 But that's not exactly a revolutionary idea. We've all heard of sprints and MVPs and iterative development, which is why I certainly wouldn't call that approach a silver bullet; it's more like a best practice at this point.
 

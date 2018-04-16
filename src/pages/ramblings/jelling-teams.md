@@ -38,11 +38,11 @@ We can't all spend all of our time working on problems that we feel deeply passi
 
 #### **2\. Mastery**
 
-It's tempting to give each task to a person who already knows how to accomplish it, thus robbing everyone else of the opportunity to learn new things. People on a jelled team know what each other want to learn, and want to help each other learn those things. This means that tasks can be given to people who want to learn rather than people who already know how to do those things. We'll come back to this below (see ""Education robbery"").
+It's tempting to give each task to a person who already knows how to accomplish it, thus robbing everyone else of the opportunity to learn new things. People on a jelled team know what each other want to learn, and want to help each other learn those things. This means that tasks can be given to people who want to learn rather than people who already know how to do those things. We'll come back to this below (see "Education robbery").
 
 #### **3\. Autonomy**
 
-This one should be somewhat obvious. People like feeling empowered to make decisions and solve problems and take educated risks. It's harder to self-motivate if your work is basically just doing exactly what someone else already told you to do. People on a jelled team (especially managers and tech leads) have the respect and trust for their team members needed to give each other the freedom to make their own technical decisions. This comes down to providing strategic direction rather than tactical direction (see ""Defensive management"").
+This one should be somewhat obvious. People like feeling empowered to make decisions and solve problems and take educated risks. It's harder to self-motivate if your work is basically just doing exactly what someone else already told you to do. People on a jelled team (especially managers and tech leads) have the respect and trust for their team members needed to give each other the freedom to make their own technical decisions. This comes down to providing strategic direction rather than tactical direction (see "Defensive management").
 
 ### **Morale**
 
@@ -71,13 +71,13 @@ Also, if some of the team members are only around part time and the other team m
 
 ### **Clique control**
 
-The idea here is that a jelling team may have a certain sense of eliteness. Even though ""clique"" is a dirty word, a little bit of friendly ""man, do we rock or what?"" can really provide a boost to morale and motivation. Try not to be too worried if your teammates are getting a little bit of an ego about the team they're on. It just means that they're confident in what they're doing, and they're proud to be on the team doing it.
+The idea here is that a jelling team may have a certain sense of eliteness. Even though "clique" is a dirty word, a little bit of friendly "man, do we rock or what?" can really provide a boost to morale and motivation. Try not to be too worried if your teammates are getting a little bit of an ego about the team they're on. It just means that they're confident in what they're doing, and they're proud to be on the team doing it.
 
 You could even go a step further and make a team name or logo. From there you can branch t-shirts or slogans or whatever you want. Don't underestimate the feeling that comes along with being a part of an exclusive group; encourage it instead.
 
 ### **Phony deadlines**
 
-A ""phony deadline"" is just made up for the sake of having a deadline, without any real world meaning. If you say the project has to be done by April 3rd but that date is totally arbitrary, then April 3rd is a phony deadline.
+A "phony deadline" is just made up for the sake of having a deadline, without any real world meaning. If you say the project has to be done by April 3rd but that date is totally arbitrary, then April 3rd is a phony deadline.
 
 The problem with phony deadlines is that they become an annoyance rather than a challenge. A tight deadline that actually has meaning behind it can be a exciting thing for a team to rally against. The deadline for a product site is October 3rd because the product will be released exactly a week afterwards? That's a real deadline. That's something that's worth working towards, because it matters. That can motivate the team.
 
@@ -97,7 +97,7 @@ We've all been there, but this can be a huge hit for a team. Give a team the pow
 
 By competition I mean things like calling specific people out or giving spot bonuses or awards for the most points closed in a week, etc. Pitting team members against each other goes against the goal of jelling the team. We want the team thinking as a team, rather than a collection of people who are working on the same project.
 
-This may be a good time to point out that traditional ""if-then"" rewards (like spot bonuses) can in many cases actually damage motivation rather than improve it. According to the book _Drive_, these can put people in the mindset that the work is not rewarding or interesting on its own, which is why they're being given extrinsic rewards to keep them going. Focus on intrinsic motivation, and remember the 3 big pieces above: Purpose, Mastery, and Autonomy.
+This may be a good time to point out that traditional "if-then" rewards (like spot bonuses) can in many cases actually damage motivation rather than improve it. According to the book _Drive_, these can put people in the mindset that the work is not rewarding or interesting on its own, which is why they're being given extrinsic rewards to keep them going. Focus on intrinsic motivation, and remember the 3 big pieces above: Purpose, Mastery, and Autonomy.
 
 ### **Education robbery**
 
@@ -111,7 +111,7 @@ It's also useful for different people to know how to do different things just fo
 
 This one's for the people in the leadership positions. You've assembled your team, you've made it through discovery, and it's time to get to work. This means it's time to start to place trust in your people. Give them the Autonomy to do their work and be there for support when they need it.
 
-One way to think of this is the difference between tactical versus strategic guidance. If we're building a building, then strategic guidance means saying, ""Ok, put the building on this hill, make it 8 stories tall, and give it a fountain in the front."" Tactical guidance is more like saying, ""We're going to need 4 bulldozers and 8,000 tons of iron girders, and we'll need 2 concrete trucks to start pouring the foundation on Tuesday."" 
+One way to think of this is the difference between tactical versus strategic guidance. If we're building a building, then strategic guidance means saying, "Ok, put the building on this hill, make it 8 stories tall, and give it a fountain in the front." Tactical guidance is more like saying, "We're going to need 4 bulldozers and 8,000 tons of iron girders, and we'll need 2 concrete trucks to start pouring the foundation on Tuesday." 
 
 Trusting in your people means telling them what needs to happen but not micromanaging. Sure, if they have questions then your feedback is welcome. But in general, a little trust goes a long way in helping the team feel autonomous, empowered, and able to jell.
 
@@ -121,7 +121,7 @@ Everyone likes to see the fruits of their labors. If you spend a month building 
 
 This can sometimes be difficult. For example, if your team only has access to a development environment because the code will end up on a super secret company intranet, then it's really tough to get closure. Or maybe it's just a case where everything is going to be deployed all at once a year from now, making constant closure impossible. These are tough problems to solve.
 
-They're worth solving though. Maybe you can set up milestones that can be deployed more often, or maybe you can have an ""internal production-ish"" site for deployments even if they can't go to actual production yet. Be creative. Try to think of some ways for people to see the end value of all their work.
+They're worth solving though. Maybe you can set up milestones that can be deployed more often, or maybe you can have an "internal production-ish" site for deployments even if they can't go to actual production yet. Be creative. Try to think of some ways for people to see the end value of all their work.
 
 ### **Splitting up the team**
 
