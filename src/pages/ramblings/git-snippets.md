@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: A collection random useful Git snippets
+title: A collection of random useful Git snippets
 date: 2017-05-18
 description: Because git is just so weird.
 tags:
