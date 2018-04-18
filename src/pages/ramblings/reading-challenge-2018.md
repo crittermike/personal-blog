@@ -203,6 +203,8 @@ Meh, didn't really hook me.
 
 My rating: ⭐⭐⭐⭐
 
+This book is sheer insanity. I love books that dip into the minds of crazy people so this was right up my alley. Fairly creepy, fairly brutal, but mostly just super raw and very interesting.
+
 ---
 
 ### A book with a cover you hate
