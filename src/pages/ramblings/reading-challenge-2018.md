@@ -62,7 +62,7 @@ I can see why Agatha Christie is such a big deal. This one had me on the edge of
 
 My rating: ⭐⭐⭐⭐
 
-This was my first ever graphic novel and I really enjoyed it. Super fun to read. It didn't convert me enough to make me want to go read a ton of comics or anything, but I had a great time raeding it.
+This was my first ever graphic novel and I really enjoyed it. Super fun to read. It didn't convert me enough to make me want to go read a ton of comics or anything, but I had a great time reading it.
 
 ---
 
