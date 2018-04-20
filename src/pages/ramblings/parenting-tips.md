@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Parenting tips and tricks
-date: 2017-05-08
+date: 2018-04-20
 description: Since I'm on my 4th kid now
 tags:
   - self
