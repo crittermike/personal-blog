@@ -39,14 +39,14 @@ Keep a backup outfit in the car at all times.
 
 ### Sleep
 
-Sleep is the one thing that never has gotten easier with time. Every other aspect of parenting gets easier with each kid, but the sleep always sucks. There's no way to properly put into words how miserable it can be to be walking around a dark house with a screaming 2 month old at 4am on only 19 minutes of sleep, knowing that in a couple hours your other kids will start waking up. A friend of mine with 3 kids, when asked for parenting advice, sad "just think long and hard about how you are going to deal with the lack of sleep."
+Sleep is the one thing that never has gotten easier with time. Every other aspect of parenting gets easier with each kid, but the sleep always sucks. There's no way to properly put into words how miserable it can be to be walking around a dark house with a screaming 2 month old at 4am on only 19 minutes of sleep, knowing that in a couple hours your other kids will start waking up. A friend of mine with 3 kids, when asked for parenting advice, said "just think long and hard about how you are going to deal with the lack of sleep."
 
 If your baby sucks at sleeping as much as mine tend to, then a few pointers:
 
 - Seriously consider sleep training at about 6 months. The Ferber Method has saved our lives. Yes, there will be crying, but it won't last long and it would save you months or years of sleep deprived insanity.
 - This [auto-rocking bed for babies](https://smile.amazon.com/Fisher-Price-Auto-Rock-Sleeper-Stone/dp/B00NEO5UTU/ref=sr_1_4_s_it?s=baby-products&ie=UTF8&qid=1524236484&sr=1-4&keywords=rock+n+play) has worked really well with my kids.
 - If your baby will sleep fine on you but not when you put them in their bed, then maybe their bed is too cold - try running a space heater in the room for a few minutes beforehand.
-- Speaking of which, try your best to never let your baby sleep with a person holding them so they don't get used to it. When you baby falls asleep, put them in bed immediately.
+- Speaking of which, try your best to never let your baby sleep with a person holding them so they don't get used to it. When your falls asleep, put them in bed immediately.
 - Take it with a grain of salt, but we've had more success by not swaddling our babies. That way they get used to being free and it's not a big transition later, and they can learn to suck a thumb or whatever for soothing. 
 - When your baby wakes up in the middle of the night and you can tell they're not sleepy, just make a cup of tea and put on some Netflix and try to make the best of it.
 
@@ -62,9 +62,11 @@ If you have multiple kids, then a rule of "everything belongs to everyone" can h
 
 One of the things you don't think about before you have kids is how impossible it is to have a non-stressful shopping or grocery trip with them, especially once they hit 2 or 3 years old. Get as much delivered as you can afford (including groceries), and save the rest for when you have a babysitter. 
 
+Don't even attempt restaurants. It's not worth it.
+
 ### Relax a bit
 
-Don't try to be the perfect parent because we all suck in various ways that children are experts at identifying.
+Don't try to be the perfect parent because we all suck in our own personal ways that children are experts at identifying.
 
 - It's fine if your kid doesn't have a bath every single day
 - Bribing with candy is often totally worth it
