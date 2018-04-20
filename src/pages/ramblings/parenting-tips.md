@@ -46,7 +46,7 @@ If your baby sucks at sleeping as much as mine tend to, then a few pointers:
 - Seriously consider sleep training at about 6 months. The Ferber Method has saved our lives. Yes, there will be crying, but it won't last long and it would save you months or years of sleep deprived insanity.
 - This [auto-rocking bed for babies](https://smile.amazon.com/Fisher-Price-Auto-Rock-Sleeper-Stone/dp/B00NEO5UTU/ref=sr_1_4_s_it?s=baby-products&ie=UTF8&qid=1524236484&sr=1-4&keywords=rock+n+play) has worked really well with my kids.
 - If your baby will sleep fine on you but not when you put them in their bed, then maybe their bed is too cold - try running a space heater in the room for a few minutes beforehand.
-- Speaking of which, try your best to never let your baby sleep with a person holding them so they don't get used to it. When your falls asleep, put them in bed immediately.
+- Speaking of which, try your best to never let your baby sleep with a person holding them so they don't get used to it. When they fall asleep, put them in bed immediately.
 - Take it with a grain of salt, but we've had more success by not swaddling our babies. That way they get used to being free and it's not a big transition later, and they can learn to suck a thumb or whatever for soothing. 
 - When your baby wakes up in the middle of the night and you can tell they're not sleepy, just make a cup of tea and put on some Netflix and try to make the best of it.
 
