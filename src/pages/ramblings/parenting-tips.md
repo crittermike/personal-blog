@@ -54,6 +54,10 @@ If your baby sucks at sleeping as much as mine tend to, then a few pointers:
 
 When your kids are going insane and running around and screaming and you feel totally overwhelmed, put on some dance music and channel all that energy into a sweet dance party.
 
+### Entertainment
+
+When they're watching TV/movies, turn on captions because they will read them without meaning to and as they learn to read in school it'll help them practice. 
+
 ### Sharing and fighting
 
 If you have multiple kids, then a rule of "everything belongs to everyone" can help. Just give the first turn to the kid that it actually does belong to, then start setting 10 minute timers to take turns until they get bored with it (which usually happens before the first cycle ends). That usually diffuses the fighting. 
