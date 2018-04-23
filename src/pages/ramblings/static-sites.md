@@ -49,7 +49,7 @@ Most sites need at least a handful of forms, even if we're just talking about yo
 
 There are also some [other services](https://github.com/agarrharr/awesome-static-website-services#forms) that can help if you don't like any that I listed.
 
-### How can my non-technical clients update content?
+### But how can non-technical people update content?
 
 You can't exactly hand a non-technical user a git repo with some markdown and say "have fun!" which is why lots of static site generators happily work alongside many common CMS'es. 
 
