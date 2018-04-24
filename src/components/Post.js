@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
@@ -27,7 +26,7 @@ export const BlogPostTemplate = ({
             <p>Tags:&nbsp;
               {tags.map(tag => (
                 <span>
-                  <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>&nbsp;
+                  <Link to={`/tags/${tag.toLowerCase()}/`}>{tag}</Link>&nbsp;
                 </span> ))}
              </p>
           </div>
