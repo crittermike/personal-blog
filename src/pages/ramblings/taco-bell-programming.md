@@ -4,8 +4,8 @@ title: Taco Bell Programming
 date: 2016-10-14
 description: How to turn a terrible accident into a learning opportunity.
 tags:
-  - process
-  - leadership
+  - development
+  - tools
 ---
 
 If you haven't read [Ted Dziuba](http://teddziuba.com/)'s [post on Taco Bell programming](http://teddziuba.com/2010/10/taco-bell-programming.html), go do that now. It's really a great post.

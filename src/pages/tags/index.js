@@ -8,8 +8,8 @@ const TagsPage = ({
 }) => (
   <section className="section">
     <Helmet title={`Tags | ${title}`} />
-      <h1 className="title is-size-2 is-bold-light">Tags</h1>
-      <ul className="taglist">
+      <h1>Tags</h1>
+      <ul>
         {group.map(tag => (
           <li key={tag.fieldValue}>
             <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
