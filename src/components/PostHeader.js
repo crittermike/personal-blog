@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 
 const PostHeader = (props) => (
-    <h3><Link to={'/'}>← Home</Link></h3>
+  <h3><Link to={'/'}>← Home</Link></h3>
 )
 
 export default PostHeader

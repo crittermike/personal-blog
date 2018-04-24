@@ -34,13 +34,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       createPage({
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
-        component: path.resolve(
-          `src/components/Post.js`
-        ),
-        // additional data can be passed via context
-        context: {
-          id,
-        },
+        component: path.resolve( `src/components/Post.js` ),
+        context: { id },
       })
     })
 
