@@ -16,11 +16,11 @@ I believe that the vast majority of the web as it exists today could and should 
 
 ### What's so special about static sites?
 
-The most obvious benefit here is performance. A static site has no DB queries, no backend language chugging or server processing, no waiting on external APIs to return, none of that. It literally just sends you the file that you requested and it's done. Because of this, static sites tend to be insanely, blazingly fast. Some generators take this even further and build in things like pre-loading of pages linked to from the current page, code splitting, inlining of CSS/JS, etc.
+The most obvious benefit here is performance. A static site has no DB queries, no backend language chugging or server processing, no waiting on external APIs to return, none of that. It does all of that ahead of time, so that it can  send you a file that it already has sitting there. Because of this, static sites tend to be insanely, blazingly fast. Some generators take this even further and build in things like pre-loading of pages linked to from the current page, code splitting, inlining of CSS/JS, etc.
 
-Static sites are also essentially unhackable, because it's just a bunch of HTML files. Your biggest security risk would no longer be the website itself; instead it would be the hosting provider or possibly the security of any 3rd party services you're embedding on your site.
+Static sites are also very secure. It's just a bunch of HTML files, so the surface areas for attack are much smaller. Your biggest security risk would no longer be the website itself; instead it would be the hosting provider or possibly the security of any 3rd party services you're embedding on your site.
 
-The hosting and infrastructure requirements are also about as simple as can be. You can host a static site anywhere - Amazon S3, Github Pages, static hosts like [Netlify](https://www.netlify.com) or [Surge](http://surge.sh/), there are even services that let you host them from your Dropbox. This means that hosting is super cheap, easy to set up, and almost effortless to maintain. If you need to switch to a new host at some point, just move the files.
+The hosting and infrastructure requirements are also about as simple as can be. You can host a static site anywhere - Amazon S3, Github Pages, static hosts like [Netlify](https://www.netlify.com) or [Surge](http://surge.sh/), there are even services that let you host them from your Dropbox. This means that hosting is super cheap, easy to set up, and almost effortless to maintain. If you need to switch to a new host at some point, just move the files. Plus, scaling is just a matter of putting your files in more places, and CDNs love static sites. 
 
 Those are, in my mind, the big 3 reasons why static sites should be the default. Here are a few more though:
 
@@ -28,15 +28,20 @@ Those are, in my mind, the big 3 reasons why static sites should be the default.
 - If you use git as the data store, then you have all of the benefits of keeping everything in a single repo, such as using git commits for content revisions.
 - You can do cool stuff during the build process like, as a random example, erroring upon finding any internal links that are 404'ing.
 
+For more reading about the benefits here, check out the [PRPL Pattern](https://developers.google.com/web/fundamentals/performance/prpl-pattern/) and [JAMstack](https://jamstack.org/).
+
 ### When should I NOT use a static site?
 
-There are certainly some exceptions here. If any of the following are true, a static site is likely not the best option for you:
+There are certainly some exceptions here. If any of the following are true, a static site MAY not be the best option for you:
 
-- If you have more than say 10,000 pages on your site, then a static site build process may be annoyingly slow. Note that some static site generators support only rebuilding the pages that have changed, so even this limit is fairly flexible, but you're still at the mercy of having to rebuild the entire site if you do something like add a new link to the global navigation.
-- If your site needs updates to be pushed live more than every half hour or so, then running a static site would mean that you're just constantly rebuilding and pushing up new versions. Again, this could be mitigated by only building the updated pages, or you could look at hybrid approaches which bring in updates via JS after page load, but it's still a limitation to be aware of.
-- If your site has lots of user content or interactivity, such as forums or wikis or user-specific content, then a static site is likely not the best choice.
+- If you have more than 10,000 or so pages on your site, then a static site build process may be annoyingly slow.
+- If your site needs updates to be pushed live more than every half hour or so, then your site would constantly be rebuilding and redeploying.
+- If your site has lots of user content or interactivity, such as forums or wikis or user-specific content, then you probably need a backend.
+- If your site needs to support dynamic content or paths which are impossible to pre-generate, then a static site probably won't work.
 
-If none of those describe your site, then it's likely a great candidate for a static site.
+Note that even with these exceptions, there are some workarounds. For example, you could only rebuild the pages that have been updated in order to support more than 10,000 pages (although you'd still be at the mercy of a full site rebuild when you do something like add a link to the main navigation), you could build hybrid/progressive pages with client-side JS to support dynamic paths or content, etc. But the point is that you'll be doing extra work to make your use case fit the constraints a static site, which is a red flag.
+
+That said, if none of those exceptions describe your site, then it's likely a great candidate for a static site.
 
 ### But what about forms?
 
@@ -70,12 +75,6 @@ The most common solution is to go with a commercial service such as [Algolia](ht
 If you want to roll your own, you can use a tool like [LunrJS](https://lunrjs.com/) to build your own search index which gets loaded in client-side if the user is searching for something. There are docs on how to do this for most common static site generators, and it's fairly straightforward. 
 
 That said, and this is a pet peeve of mine in general, you may not really need a search. Check your analytics to see how often it's actually being used on your current site. There's a good chance that your typical user is just resorting to Googling if they can't find what they're looking for you in your navigation, since many users (such as myself) have been conditioned to just assume site search features are terrible.
-
-### But what about dynamic content or paths?
-
-What do you do about the case where there are an infinite number of possible paths for some given feature? For example, a [side project of mine](http://toogl.es) is a simplified frontend for YouTube, so any YouTube video is reachable there. That is obviously way too many paths to be able to generate ahead of time.
-
-In situations like this, you rely on frontend JS. Most static site generators allow for "hybrid" pages that are bootstrapped in the pre-built HTML but bring in the dynamic goodness after page load. Here are [some docs on this from GatsbyJS](https://www.gatsbyjs.org/docs/building-apps-with-gatsby/) for example. 
 
 ### Ok, what are my options?
 
