@@ -26,9 +26,9 @@ export const BlogPostTemplate = ({
           <div>
             <p>Tags:&nbsp;
               {tags.map(tag => (
-                  <span>
-                    <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>&nbsp;
-                  </span> ))}
+                <span>
+                  <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>&nbsp;
+                </span> ))}
              </p>
           </div>
         ) : null}
