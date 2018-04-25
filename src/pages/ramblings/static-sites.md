@@ -84,7 +84,5 @@ For the record, this blog is built with [GatsbyJS](https://www.gatsbyjs.org/) wh
 
 ### Summary
 
-Static sites are faster, more secure, and easier to host. The majority of websites could easily be built as static sites without losing anything. So why aren't they? 
-
-If you disagree with me, feel free to [tweet at me](https://twitter.com/mcrittenden) and let me know why! 
+Static sites are faster, more secure, and easier to host. The majority of websites could easily be built as static sites without losing anything. So why aren't they? If you disagree with me, feel free to [tweet at me](https://twitter.com/mcrittenden) and let me know why! 
 
