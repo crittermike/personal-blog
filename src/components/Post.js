@@ -21,6 +21,7 @@ export const BlogPostTemplate = ({
         <h1>{title}</h1>
         <p><small>{date}</small></p><br /><br /><br />
         <PostContent content={content} />
+        <hr />
         {tags && tags.length ? (
           <div>
             <p>Tags:&nbsp;
