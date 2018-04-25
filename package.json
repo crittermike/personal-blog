@@ -12,9 +12,10 @@
     "gatsby-plugin-netlify-cms": "^1.0.9",
     "gatsby-plugin-react-helmet": "^2.0.5",
     "gatsby-remark-images": "^1.5.50",
-    "gatsby-remark-prismjs": "^1.2.24",
+    "gatsby-remark-prismjs": "^2.0.2",
     "gatsby-source-filesystem": "^1.5.23",
     "gatsby-transformer-remark": "^1.7.40",
+    "prismjs": "^1.14.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-helmet": "^5.2.0"
