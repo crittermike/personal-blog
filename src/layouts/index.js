@@ -6,7 +6,7 @@ import PostFooter from '../components/PostFooter'
 import Helmet from 'react-helmet'
 
 import './all.css'
-import favicon from '../img/favicon.ico'
+import favicon from '../../static/img/favicon.ico'
 
 require("prismjs/themes/prism-tomorrow.css");
 
