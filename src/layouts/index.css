@@ -1,0 +1,15 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply .bg-dark }
+a { @apply .text-white .border-salmon .border-b-2 .no-underline }
+a:hover { @apply .bg-salmon }
+hr { @apply .border-b .pt-6 .mb-8 }
+
+.content p { @apply .my-6 }
+.content blockquote { @apply .pl-6 .border-l-4 }
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 { @apply .my-6}
+
+.gatsby-highlight { @apply .text-sm my-3 }
+.language-text { @apply .text-base }

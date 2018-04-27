@@ -5,7 +5,7 @@ import Footer from './Footer'
   const PostFooter = () => (
   <div>
     <br />
-    <h3><Link to={'/'}>← Home</Link></h3>
+    <h3 className="mt-8"><Link to={'/'}>← Home</Link></h3>
     <Footer/>
   </div>
 )

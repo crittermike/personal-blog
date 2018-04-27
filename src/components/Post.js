@@ -18,9 +18,9 @@ export const BlogPostTemplate = ({
   return (
     <section>
       {helmet || ''}
-        <h1>{title}</h1>
-        <p><small>{date}</small></p><br /><br /><br />
-        <PostContent content={content} />
+        <h1 className="text-3xl my-6">{title}</h1>
+        <p className="mb-32"><small>{date}</small></p>
+        <PostContent content={content} className="content" />
         <hr />
         {tags && tags.length ? (
           <div>

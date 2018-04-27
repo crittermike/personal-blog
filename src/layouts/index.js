@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 import PostFooter from '../components/PostFooter'
 import Helmet from 'react-helmet'
 
-import './all.css'
+import './style.css'
 import favicon from '../../static/img/favicon.ico'
 
 require("prismjs/themes/prism-tomorrow.css");
@@ -23,13 +23,15 @@ class Template extends React.Component {
             footer = ( <PostFooter/> );
         }
         return (
-            <div className="container">
-                <Helmet>
-                    <link rel="shortcut icon" type="image/ico" href={favicon} />
-                </Helmet>
-                {header}
-                {children()}
-                {footer}
+            <div className="font-sans text-xl text-white leading-normal min-h-screen pt-8">
+                <div className="container mx-auto max-w-lg pt-6">
+                    <Helmet>
+                        <link rel="shortcut icon" type="image/ico" href={favicon} />
+                    </Helmet>
+                    {header}
+                    {children()}
+                    {footer}
+                </div>
             </div>
         )
     }
