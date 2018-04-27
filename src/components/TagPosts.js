@@ -6,7 +6,7 @@ class TagPosts extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
     const postLinks = posts.map(post => (
-      <li key={post.node.fields.slug}>
+      <li className="my-2" key={post.node.fields.slug}>
         <Link to={post.node.fields.slug}>{post.node.frontmatter.title}</Link>
       </li>
     ))
@@ -20,9 +20,9 @@ class TagPosts extends React.Component {
     return (
       <section className="section">
         <Helmet title={`${tag} | ${title}`} />
-        <h3>{tagHeader}</h3>
+        <h1 className="text-3xl my-6">{tagHeader}</h1>
         <ul>{postLinks}</ul>
-        <p>
+        <p className="mt-8">
           <Link to="/tags/">Browse all tags</Link>
         </p>
       </section>

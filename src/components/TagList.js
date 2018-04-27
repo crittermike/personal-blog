@@ -3,10 +3,10 @@ import Link from 'gatsby-link'
 
 const TagList = props => (
   <div>
-    <h1>Tags</h1>
+    <h1 className="text-3xl my-6">All tags</h1>
     <ul>
       {props.group.map(tag => (
-        <li key={tag.fieldValue}>
+        <li className="my-2" key={tag.fieldValue}>
           <Link to={`/tags/${tag.fieldValue.toLowerCase()}/`}>
             {tag.fieldValue} ({tag.totalCount})
           </Link>
