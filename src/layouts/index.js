@@ -8,34 +8,33 @@ import Helmet from 'react-helmet'
 import './style.css'
 import favicon from '../../static/img/favicon.ico'
 
-require("prismjs/themes/prism-tomorrow.css");
+require('prismjs/themes/prism-tomorrow.css')
 
 class Template extends React.Component {
-    render() {
-        const { location, children } = this.props
-        let header, footer;
+  render() {
+    const { location, children } = this.props
+    let header, footer
 
-        if (location.pathname === '/') {
-            header = ( <Header/> )
-            footer = ( <Footer/> )
-        } else {
-            header = ( <PostHeader/> );
-            footer = ( <PostFooter/> );
-        }
-        return (
-            <div className="font-sans text-xl text-white leading-normal min-h-screen pt-8">
-                <div className="container mx-auto max-w-lg pt-6">
-                    <Helmet>
-                        <link rel="shortcut icon" type="image/ico" href={favicon} />
-                    </Helmet>
-                    {header}
-                    {children()}
-                    {footer}
-                </div>
-            </div>
-        )
+    if (location.pathname === '/') {
+      header = <Header />
+      footer = <Footer />
+    } else {
+      header = <PostHeader />
+      footer = <PostFooter />
     }
+    return (
+      <div className="font-sans text-xl text-white leading-normal min-h-screen pt-8">
+        <div className="container mx-auto max-w-lg pt-6">
+          <Helmet>
+            <link rel="shortcut icon" type="image/ico" href={favicon} />
+          </Helmet>
+          {header}
+          {children()}
+          {footer}
+        </div>
+      </div>
+    )
+  }
 }
 
 export default Template
-

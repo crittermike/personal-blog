@@ -18,20 +18,24 @@ export const BlogPostTemplate = ({
   return (
     <section>
       {helmet || ''}
-        <h1 className="text-3xl my-6">{title}</h1>
-        <p className="mb-32"><small>{date}</small></p>
-        <PostContent content={content} className="content" />
-        <hr />
-        {tags && tags.length ? (
-          <div>
-            <p>Tags:&nbsp;
-              {tags.map(tag => (
-                <span>
-                  <Link to={`/tags/${tag.toLowerCase()}/`}>{tag}</Link>&nbsp;
-                </span> ))}
-             </p>
-          </div>
-        ) : null}
+      <h1 className="text-3xl my-6">{title}</h1>
+      <p className="mb-32">
+        <small>{date}</small>
+      </p>
+      <PostContent content={content} className="content" />
+      <hr />
+      {tags && tags.length ? (
+        <div>
+          <p>
+            Tags:&nbsp;
+            {tags.map(tag => (
+              <span>
+                <Link to={`/tags/${tag.toLowerCase()}/`}>{tag}</Link>&nbsp;
+              </span>
+            ))}
+          </p>
+        </div>
+      ) : null}
     </section>
   )
 }
@@ -53,7 +57,9 @@ const BlogPost = ({ data }) => {
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Mike Crittenden's Blog`} />}
+      helmet={
+        <Helmet title={`${post.frontmatter.title} | Mike Crittenden's Blog`} />
+      }
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
       date={post.frontmatter.date}

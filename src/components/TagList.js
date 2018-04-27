@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const TagList = (props) => (
+const TagList = props => (
   <div>
     <h1>Tags</h1>
     <ul>

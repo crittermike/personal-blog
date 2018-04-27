@@ -4,11 +4,16 @@ import Link from 'gatsby-link'
 import TagList from '../../components/TagList'
 
 const TagsPage = ({
-  data: { allMarkdownRemark: { group }, site: { siteMetadata: { title } } },
+  data: {
+    allMarkdownRemark: { group },
+    site: {
+      siteMetadata: { title },
+    },
+  },
 }) => (
   <section className="section">
     <Helmet title={`Tags | ${title}`} />
-      <TagList group={group} />
+    <TagList group={group} />
   </section>
 )
 

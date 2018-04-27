@@ -20,11 +20,11 @@ class TagPosts extends React.Component {
     return (
       <section className="section">
         <Helmet title={`${tag} | ${title}`} />
-          <h3>{tagHeader}</h3>
-          <ul>{postLinks}</ul>
-          <p>
-            <Link to="/tags/">Browse all tags</Link>
-          </p>
+        <h3>{tagHeader}</h3>
+        <ul>{postLinks}</ul>
+        <p>
+          <Link to="/tags/">Browse all tags</Link>
+        </p>
       </section>
     )
   }

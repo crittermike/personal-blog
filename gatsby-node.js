@@ -34,7 +34,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       createPage({
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
-        component: path.resolve( `src/components/Post.js` ),
+        component: path.resolve(`src/components/Post.js`),
         context: { id },
       })
     })
@@ -48,7 +48,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       }
     })
     // Eliminate duplicate tags
-    tags.filter((tag,i) => tags.indexOf(tag) == i)
+    tags.filter((tag, i) => tags.indexOf(tag) == i)
 
     // Make tag pages
     tags.forEach(tag => {

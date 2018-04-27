@@ -10,13 +10,12 @@ export default class IndexPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-        <div>
-          <Helmet title="Mike Crittenden's Blog" />
-          {posts.filter(post => post.node.frontmatter.templateKey === 'blog-post')
-            .map(({ node: post }) => (
-              <PostTeaser post={post}/>
-            ))}
-        </div>
+      <div>
+        <Helmet title="Mike Crittenden's Blog" />
+        {posts
+          .filter(post => post.node.frontmatter.templateKey === 'blog-post')
+          .map(({ node: post }) => <PostTeaser post={post} />)}
+      </div>
     )
   }
 }
