@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const PostTeaser = props => (
-  <div className="md:flex justify-between my-8">
+  <div className="md:flex justify-between my-8 items-center">
     <h3>
       <Link to={props.post.fields.slug}>{props.post.frontmatter.title}</Link>
     </h3>
