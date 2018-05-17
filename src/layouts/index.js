@@ -36,7 +36,6 @@ class Template extends React.Component {
           {header}
           {children()}
           {footer}
-          <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" lazyload="1" />
         </div>
       </div>
     )
