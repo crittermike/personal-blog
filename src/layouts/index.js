@@ -25,7 +25,7 @@ class Template extends React.Component {
     return (
       <div className="font-sans text-xl text-white leading-normal min-h-screen pt-8">
         <div className="container mx-auto max-w-lg pt-6">
-          <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" lazyload />
+          <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" lazyload="1" />
           <Helmet
             meta={[
               { name: 'description', content: 'The personal blog of Mike Crittenden' }
