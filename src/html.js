@@ -40,7 +40,6 @@ module.exports = class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" lazyload="1" />
         </body>
       </html>
     )

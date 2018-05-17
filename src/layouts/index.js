@@ -4,6 +4,7 @@ import PostHeader from '../components/PostHeader'
 import Footer from '../components/Footer'
 import PostFooter from '../components/PostFooter'
 import Helmet from 'react-helmet'
+import WebFont from 'webfontloader'
 
 import './style.css'
 import favicon from '../../static/img/favicon.ico'
@@ -11,6 +12,14 @@ import favicon from '../../static/img/favicon.ico'
 require('prismjs/themes/prism-tomorrow.css')
 
 class Template extends React.Component {
+  componentDidMount() {
+    WebFont.load({
+      google: {
+        families: ['Josefin Sans']
+      }
+    });
+  }
+
   render() {
     const { location, children } = this.props
     let header, footer
