@@ -7,6 +7,18 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Mike Crittenden",
+        short_name: "MikeCr.it",
+        start_url: "/",
+        background_color: "#4e5166",
+        theme_color: "#ff5964",
+        display: "minimal-ui",
+        // icon: "src/images/icon.png", // This path is relative to the root of the site.
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-6322775-21',
