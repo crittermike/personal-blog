@@ -25,8 +25,13 @@ class Template extends React.Component {
     return (
       <div className="font-sans text-xl text-white leading-normal min-h-screen pt-8">
         <div className="container mx-auto max-w-lg pt-6">
-          <Helmet>
+          <Helmet
+            meta={[
+              { name: 'description', content: 'The personal blog of Mike Crittenden' }
+            ]}
+          >
             <link rel="shortcut icon" type="image/ico" href={favicon} />
+            <html lang="en" />
           </Helmet>
           {header}
           {children()}
