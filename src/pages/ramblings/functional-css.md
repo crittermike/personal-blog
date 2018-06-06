@@ -60,15 +60,15 @@ Utility classes fix all of these things. I've written [more about this in the pa
 
 ### What about separation of concerns and semantic markup?
 
-This can be tough to get past, but if you really think about it, why is semantic markup valuable?
+This can be tough to get past, but let's think about it. First of all, ask yourself if your markup is even semantic. If you're using presentational classes like `card` or `form__submit--disabled`, then it probably isn't.
 
-Is it because it's useful to be able to tell what something is based on the class name? That's the easy answer, but has that ever really been valuable to you? Have you looked at a thing with `class="profile-card"` and said "oh this is a profile card", when it wouldn't have been just as easy to tell that based on the context or what it contains?
+If your markup IS semantic, then why is this useful? Have you ever really looked at a thing with `class="profile-card"` and said "oh this is a profile card", when it wouldn't have been just as easy to tell that based on the context or what it contains?
 
-Furthermore, is your existing markup even semantic? If you're using classes like `card` or `form__submit--disabled`, then it probably isn't. If it IS semantic, then what are you doing in situations where `profile-card` and `contact-block` need to look exactly the same? How are you sharing those styles? Or are you sharing them at all? Is semantic markup possibly hurting more than it's helping?
+If your answer is an emphatic "YES I HAVE!" then there's nothing stopping you from continuing to add those descriptive classes, even if they're irrelevant for styling. You can still make the first class `profile-card` for your own sake, and follow it with the utility classes that do the styling.
 
-In my opinion, semantic markup is something that has been burned into our brains because of the history of CSS (trying to get people away from using tables, sites like CSS Zen Garden, etc.) and it's not necessarily very useful anymore. In fact, I think that it's actually much more useful to have classes which tell you what something looks like, rather than what something is.
+In fact, as a side note, this approach can also help with debugging, for those situations where you see something broken in the browser and need to find out where in the codebase that thing is being defined. It's a lot easier to track down `profile-card` in your code than `bg-blue mt-5 w-50`, even though `profile-card` won't have any CSS attached to it.
 
-If you're skeptical, take some time and read [this post](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/) which really was a light bulb for me.
+I think that separation of concerns is something that has been burned into our brains because of the history of CSS (trying to get people away from using tables, sites like CSS Zen Garden, etc.) and it's not necessarily very useful anymore. If you're skeptical, take some time and read [this post](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/) which really was a light bulb for me.
 
 ### OK, but the DOM still looks like a dumpster fire
 
@@ -78,14 +78,12 @@ Anyways, it looks better than it would if you were using many of the common CSS 
 
 ### I don't want to have to repeat the same 20 classes on every single button
 
-That's understandable. I will say that there's a chance that repeating those 20 classes is actually somewhat valuable, because when you get into a situation where one of the buttons needs to have slightly more margin-top than the others, then it's easy to fix.
+That's understandable. I will say that there's a chance that repeating those 20 classes can actually be somewhat valuable, because when you get into a situation where one of the buttons needs to have slightly more margin-top than the others, then it's easy to fix.
 
-That said, for situations where you are absolutely positively sure that you need the EXACT same styles and that won't ever change, then some of the Functional CSS frameworks have solutions for this. Tailwind for example, [allows creating components](https://tailwindcss.com/docs/extracting-components/) which are composed of utility classes. This allows you to do things like this:
+That said, for situations where you're sure that you need to reuse the exact same set of styles, then some of the frameworks have solutions for this. Tailwind, for example, [allows creating components](https://tailwindcss.com/docs/extracting-components/) which are composed of utility classes. This allows you to do things like this:
 
 ```html
-<button class="btn-blue">
-  Button
-</button>
+<button class="btn-blue">Button</button>
 
 <style>
 .btn-blue {
@@ -96,6 +94,14 @@ That said, for situations where you are absolutely positively sure that you need
 }
 </style>
 ```
+
+Note that you can always combine component classes with utility classes for the pieces that do vary. So you can do things like:
+
+```html
+<button class="btn-blue mt-3">Button</button>
+```
+
+That'll give you all of the default classes for `btn-blue` in addition to adding a custom `margin-top` for this specific instance.
 
 ### Won't I end up with thousands of classes that I don't even need?
 
@@ -129,3 +135,7 @@ There's really a lot to love here, I think.
 Here's a [giant list of links defending Functional CSS](https://johnpolacek.github.io/the-case-for-atomic-css/) that you may find interesting.
 
 Also, feel free to [tweet at me](https://twitter.com/mcrittenden) and debate!
+
+```
+
+```
