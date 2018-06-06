@@ -135,7 +135,3 @@ There's really a lot to love here, I think.
 Here's a [giant list of links defending Functional CSS](https://johnpolacek.github.io/the-case-for-atomic-css/) that you may find interesting.
 
 Also, feel free to [tweet at me](https://twitter.com/mcrittenden) and debate!
-
-```
-
-```
