@@ -80,7 +80,9 @@ Anyways, it looks better than it would if you were using many of the common CSS 
 
 That's understandable. I will say that there's a chance that repeating those 20 classes can actually be somewhat valuable, because when you get into a situation where one of the buttons needs to have slightly more margin-top than the others, then it's easy to fix.
 
-That said, for situations where you're sure that you need to reuse the exact same set of styles, then some of the frameworks have solutions for this. Tailwind, for example, [allows creating components](https://tailwindcss.com/docs/extracting-components/) which are composed of utility classes. This allows you to do things like this:
+Also, if you find yourself in a situation where you're using the exact same classes in a bunch of different places, that's probably a DRY problem with repeated markup, and you should likely consider abstracting that into a reusable fragment or template so that you can define it in one place and just include it wherever you need it.
+
+That said, for situations where you're sure that you need to reuse the exact same set of styles, and for whatever reason it doesn't make sense to abstract that into a reusable template, then some of the frameworks have solutions for this. Tailwind, for example, [allows creating components](https://tailwindcss.com/docs/extracting-components/) which are composed of utility classes. This allows you to do things like this:
 
 ```html
 <button class="btn-blue">Button</button>
@@ -102,6 +104,8 @@ Note that you can always combine component classes with utility classes for the 
 ```
 
 That'll give you all of the default classes for `btn-blue` in addition to adding a custom `margin-top` for this specific instance.
+
+All that said, I don't necessarily love this approach because it can muddy the waters. You might end up in a place where lots of things use component classes and lots of things don't and you aren't really sure what the dividing line is. My suggestion is to only use this technique when you absolutely have to because the alternative would drive you crazy.
 
 ### Won't I end up with thousands of classes that I don't even need?
 
