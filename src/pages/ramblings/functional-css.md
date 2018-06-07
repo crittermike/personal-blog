@@ -132,6 +132,7 @@ There's really a lot to love here, I think.
 * You don't ever have to worry that changing the styles for one thing will break something else (which may make visual regression testing irrelevant)
 * You never have to deal with one instance of a thing needing a slightly different style than the other instances, which screws up your reusable classes.
 * Your CSS always stays the same size rather than expanding over time
+* It's easy to un-apply a style by just removing the class (as opposed to the traditional cascade where you typically have to override, adding even more CSS)
 * Rendering speed performance is supposedly improved (though I have seen no proof of this)
 
 ### Still not convinced?
