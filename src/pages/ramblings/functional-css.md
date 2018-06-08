@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: In Defense of Functional CSS
-date: 2018-06-07
+date: 2018-06-08
 description: An attempted rebuttal to arguments against Functional CSS
 tags:
   - development
