@@ -57,6 +57,10 @@ If #3 happens, then you're in the unfortunate position of either have to accept 
 
 And on and on we go, improving your life one step at a time.
 
+## Step 6: Update on a regular basis
+
+Set a weekly or monthly reminder to update and reprioritize your suck list, so that you can continually be working on the suckiest things.
+
 ## This seems completely idiotic, right?
 
 I know it seems dumb, because human beings are already just naturally trained to identify their problems and try to fix them. If your toe hurts, you'll recognize that and figure out what's causing it so that it can be fixed, right? So why go to all this effort of making lists?
