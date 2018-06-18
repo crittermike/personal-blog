@@ -54,21 +54,30 @@ There are also [lots more](https://css-tricks.com/need-css-utility-library/) if 
 
 ### Isn't that basically the same thing as inline styles?
 
-Not quite, for a few reasons. Inline styles don't respect media queries, and they aren't limited to pre-defined options, and they cause specificity issues, etc.
+Not quite, for a few reasons:
 
-Utility classes fix all of these things. I've written [more about this in the past](https://mikecr.it/ramblings/utility-classes-vs-inline-styles).
+* Inline styles don't respect media queries, which basically rules out responsive design
+* Inline styles aren't limited to pre-defined options, meaning you can still end up with 90 different shades of blue)
+* Inline styles cause specificity issues, since they trump separate stylesheets.
+* Inline styles don't support print-specific styles.
+* Inline styles can't apply to multiple elements. Utility classes can define `.bg-blue` once and have it apply to many things, which leads to shorter markup and quicker rendering speed.
+* Inline styles are a pain to type. Compare `class="f-sm bg-blue"` to `style="font-size: 10px; background-color: #0000ff;"`.
 
-### What about separation of concerns and semantic markup?
+Utility classes fix all of these things.
 
-This can be tough to get past, but let's think about it. First of all, ask yourself if your markup is even semantic. If you're using presentational classes like `card` or `form__submit--disabled`, then it probably isn't.
+If, however, your objection to inline styles is that dirty up your markup or they go against your principles, then keep reading.
 
-If your markup IS semantic, then why is this useful? Have you ever really looked at a thing with `class="profile-card"` and said "oh this is a profile card", when it wouldn't have been just as easy to tell that based on the context or what it contains?
+### What about separation of concerns and semantic class names?
 
-If your answer is an emphatic "YES I HAVE!" then there's nothing stopping you from continuing to add those descriptive classes, even if they're irrelevant for styling. You can still make the first class `profile-card` for your own sake, and follow it with the utility classes that do the styling.
+This can be tough to get past, but let's think about it. First of all, let me be clear that I'm NOT suggesting we do away with semantic **markup**, meaning using the correct HTML elements. I'm talking about semantic **class names**, which are classes that describe what that element _is_ or _contains_ rather than what it looks like. With that in mind, first ask yourself if your class names are even semantic. If you're using presentational classes like `card` or `form__submit--disabled`, then they probably aren't.
 
-In fact, as a side note, this approach can also help with debugging, for those situations where you see something broken in the browser and need to find out where in the codebase that thing is being defined. It's a lot easier to track down `profile-card` in your code than `bg-blue mt-5 w-50`, even though `profile-card` won't have any CSS attached to it.
+If your classes ARE semantic, then why is this useful? Have you ever really looked at a thing with `class="profile-card"` and said "oh this is a profile card", when it wouldn't have been just as easy to tell that based on the context or what it contains?
 
-I think that separation of concerns is something that has been burned into our brains because of the history of CSS (trying to get people away from using tables, sites like CSS Zen Garden, etc.) and it's not necessarily very useful anymore. If you're skeptical, take some time and read [this post](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/) which really was a light bulb for me.
+If your answer is an emphatic "YES I HAVE!" then there's nothing stopping you from continuing to add those semantic classes, even if they're irrelevant for styling. You can still make the first class `profile-card` for your own sake, and follow it with the utility classes that do the styling. You can completely ignore the styling implications of the class names that you choose, because there are none.
+
+As a side note, this approach can also help with debugging, for those situations where you see something broken in the browser and need to find out where in the codebase that thing is being defined. It's a lot easier to track down `profile-card` in your code than `bg-blue mt-5 w-50`, even though `profile-card` won't have any CSS attached to it.
+
+I think that separation of concerns (i.e., the whole idea that the markup should be completely independent from the styling) is something that has been burned into our brains because of the history of CSS (trying to get people away from using tables, sites like CSS Zen Garden, etc.) and it's not necessarily very useful anymore. If you're skeptical, take some time and read [this post](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/) which really was a light bulb for me.
 
 ### OK, but the DOM still looks like a dumpster fire
 
