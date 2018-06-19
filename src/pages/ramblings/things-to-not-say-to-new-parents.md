@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: What to NOT say to soon-to-be parents
 date: 2010-02-23
-description: A very helpful guide
 tags:
   - personal
 ---

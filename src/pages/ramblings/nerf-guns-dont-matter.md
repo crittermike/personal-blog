@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: Nerf guns don't matter
 date: 2012-09-14
-description: Focus on what's important when looking for a job.
 tags:
   - self
 ---

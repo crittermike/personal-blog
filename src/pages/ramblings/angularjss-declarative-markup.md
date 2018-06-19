@@ -1,14 +1,12 @@
 ---
-templateKey: blog-post
 title: AngularJS's declarative markup
 date: 2013-04-11
-description: It's really not as yucky as it looks.
 tags:
   - development
   - frontend
 ---
 
-Every time a discussion of AngularJS pops up, [someone](http://www.reddit.com/r/programming/comments/y6vw0/angularjs_an_awesome_javascript_library/c5sygyn) [inevitably](https://news.ycombinator.com/item?id=5526058) [brings](https://news.ycombinator.com/item?id=4375821) [up](https://news.ycombinator.com/item?id=5169170) the fact that Angular wants you to add custom ng-* attributes to your markup. They say that we worked so hard to get away from stuff like:
+Every time a discussion of AngularJS pops up, [someone](http://www.reddit.com/r/programming/comments/y6vw0/angularjs_an_awesome_javascript_library/c5sygyn) [inevitably](https://news.ycombinator.com/item?id=5526058) [brings](https://news.ycombinator.com/item?id=4375821) [up](https://news.ycombinator.com/item?id=5169170) the fact that Angular wants you to add custom ng-\* attributes to your markup. They say that we worked so hard to get away from stuff like:
 
 ```html
 <a onclick="whatever()" href="#">Click me</a>
@@ -24,7 +22,7 @@ Here's why I think this is not a big deal.
 
 ### You can make it conform to the HTML5 spec
 
-One of the most common problems people have with this is that ng-* is not a valid HTML attribute. The quick and easy answer to that is that Angular also accepts data-ng-* which **is** HTML5 conformant. It's just not as widely used.
+One of the most common problems people have with this is that ng-_ is not a valid HTML attribute. The quick and easy answer to that is that Angular also accepts data-ng-_ which **is** HTML5 conformant. It's just not as widely used.
 
 ### HTML is already behavior-oriented.
 

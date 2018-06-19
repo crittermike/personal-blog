@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: Making the most of Post Mortems
 date: 2016-10-14
-description: How to turn a terrible accident into a learning opportunity.
 tags:
   - process
   - leadership
@@ -18,8 +16,7 @@ Why wasn’t this caught right when the deploy went out, you ask, or better yet,
 
 You fix the typo, push a hotfix release, and all is well with the world. You’re able to lay back down for 15 minutes before your alarm goes off to get the kids ready for school.
 
-Step 1: Breathe, don’t blame
-----------------------------
+## Step 1: Breathe, don’t blame
 
 You’re probably pretty upset at this point. You’re upset at the person who made the typo, upset at the code reviewers who approved the pull request, and maybe you’re even upset at whoever’s decision it was to architect a system where there is a settings file that is only ever used or testable during peak hours on production.
 
@@ -47,8 +44,7 @@ If you fix something that breaks, then you’ve been given a golden opportunity.
 
 Make that mistake impossible to make in the future! Add monitoring to ensure that that mistake gets caught immediately next time! Use it as a way to make your project better, stronger, more robust, rather than a way to make someone feel bad.
 
-Step 2: Write up the post mortem (alone)
-----------------------------------------
+## Step 2: Write up the post mortem (alone)
 
 Hopefully now that you’ve taken some time to calm down and you’ve realized that finger pointing is not the answer, you’re able to think a bit more clearly. This is a good time to write up the section of the post-mortem that explains what broke and how you fixed it, since it’s still fresh in your mind and your mind isn’t clouded with grumpy thoughts.
 
@@ -63,17 +59,16 @@ Here are some tips for this part.
 If you’re having trouble with finding the impact beyond a surface level, one tool you can use is the [Appreciation Process](https://www.mindtools.com/pages/article/newTMC_01.htm). This involves starting with the problem (“contact form submissions timed out”) and continually asking “So what?” This can be useful in making sure you fully appreciate all of the repercussions of this problem. Using our example:
 
 > Problem: Contact form submissions timed out.
-> 
-> *   So what? The company didn’t receive valuable contact requests sent by users.
-> *   So what? Users got angry that they had to resort to using the slow automated phone system.
-> *   So what? Angry users swarming the phone lines caused people to have to wait a long time to talk to a representative.
-> *   So what? This affected users beyond the initial batch of people who had failed contact form submissions, spreading to a larger group.
-> *   So what? A higher percentage of these users than normal canceled their service out of frustration, which lost the company $X dollars above the normal range for that day and time.
+>
+> * So what? The company didn’t receive valuable contact requests sent by users.
+> * So what? Users got angry that they had to resort to using the slow automated phone system.
+> * So what? Angry users swarming the phone lines caused people to have to wait a long time to talk to a representative.
+> * So what? This affected users beyond the initial batch of people who had failed contact form submissions, spreading to a larger group.
+> * So what? A higher percentage of these users than normal canceled their service out of frustration, which lost the company $X dollars above the normal range for that day and time.
 
 Don’t feel like you need to limit each “So what?” to just one answer. You can have multiple answers at any level and create more of a tree out of it if that’s helpful. Use some common sense about which answers are worth following deeper and which aren’t.
 
-Step 3: Find the root cause (together)
---------------------------------------
+## Step 3: Find the root cause (together)
 
 Now that you have all the facts documented, it’s time for the fun part.
 
@@ -83,9 +78,9 @@ Once everyone is clear that this is going to be an open and honest discussion an
 
 Now that everyone understands the details, it’s time to get to the meat of the discussion. For the rest of the meeting, you’ll probably want to focus on finding the answer to a few simple questions, which I’ll provide some tools for below:
 
-*   **Error Prevention: What made this mistake possible?** What set of circumstances or processes (or lack thereof) led to this mistake? This is often called “Root Cause Analysis” and we’ll talk through some tools for it below.
-*   **Error Detection: What kept this mistake from being caught after it was made?** What logging or QA or monitoring needs to be added or altered to catch it earlier? Why was the error allowed to do so much damage?
-*   **Cost vs. Value: What would it take to detect or prevent this mistake in the future?** Are we sure that implementing the “best” prevention or detection is really worth the effort involved? If a mistake takes 1 month of work to really prevent but only 10 minutes to fix if and when it pops up, then it doesn’t really make sense to spend a month preventing it, and you should look for a simpler option.
+* **Error Prevention: What made this mistake possible?** What set of circumstances or processes (or lack thereof) led to this mistake? This is often called “Root Cause Analysis” and we’ll talk through some tools for it below.
+* **Error Detection: What kept this mistake from being caught after it was made?** What logging or QA or monitoring needs to be added or altered to catch it earlier? Why was the error allowed to do so much damage?
+* **Cost vs. Value: What would it take to detect or prevent this mistake in the future?** Are we sure that implementing the “best” prevention or detection is really worth the effort involved? If a mistake takes 1 month of work to really prevent but only 10 minutes to fix if and when it pops up, then it doesn’t really make sense to spend a month preventing it, and you should look for a simpler option.
 
 Notice that you’re attacking it from both sides: prevention and detection. You want to prevent the car from leaking oil, but you also want to keep the engine from blowing up if the oil does find a way to leak.
 
@@ -98,12 +93,12 @@ There’s a lot of [theory and history to this method](https://en.wikipedia.org/
 Using our settings file typo outage as an example, it could look like this:
 
 > Problem: Contact form submissions caused site timeouts and were never received.
-> 
-> *   Why? The CRM was not be reachable from one of our production servers.
-> *   Why? The URL of the CRM was incorrect in the settings file, so the site timed out trying to communicate with it.
-> *   Why? A developer had to alter the settings file to update CRM URLs and made a mistake on that one.
-> *   Why? The developer who worked on that had to alter dozens of settings files, causing it to be easily missed.
-> *   Why? We have a settings file per environment and per site for this platform, which adds up to a lot of settings files.
+>
+> * Why? The CRM was not be reachable from one of our production servers.
+> * Why? The URL of the CRM was incorrect in the settings file, so the site timed out trying to communicate with it.
+> * Why? A developer had to alter the settings file to update CRM URLs and made a mistake on that one.
+> * Why? The developer who worked on that had to alter dozens of settings files, causing it to be easily missed.
+> * Why? We have a settings file per environment and per site for this platform, which adds up to a lot of settings files.
 
 In that situation, we went from the problem (site timeouts) all the way down to the root cause (we have too many settings files, which aren’t manageable). Notice that we skipped right by the “blame” step (i.e., “developer made a mistake,” which is only Why #3 in our case) because stopping there _isn’t helpful at all_.
 
@@ -131,30 +126,29 @@ With this technique, you write the problem off to the right and then draw a sort
 
 The idea is that for each of the “bones” you should add a category, and then inside those categories you brainstorm possible causes within that category. The categories could look something like this:
 
-*   People
-*   Methods/Processes
-*   Tools/Software
-*   Environment/Conditions
-*   Resources/Documentation
+* People
+* Methods/Processes
+* Tools/Software
+* Environment/Conditions
+* Resources/Documentation
 
 Looking back at our situation, if we were talking about the “Processes” category, some causes we could list would include:
 
-*   No QA process for production settings
-*   Code review process lacking thoroughness
-*   Process for updating settings is overly complex
+* No QA process for production settings
+* Code review process lacking thoroughness
+* Process for updating settings is overly complex
 
 See where are we going with this? Fishbone diagrams are a good way to force yourself to think about each category of things that could contribute to the issue, instead of just the ones that are immediately apparent.
 
-Step 4: Put it to action
-------------------------
+## Step 4: Put it to action
 
 Now that you have your root cause(s) that everyone agrees upon, it’s time to fix them. Brainstorm a few options for fixing each root cause, and talk through each one with the team.
 
 In our example, some options for fixing the root cause of having too many settings files may be:
 
-*   Refactor the settings files to share more code so that there’s less duplication, making settings changes in the future touch less files
-*   Consolidate non-prod environments (sandbox, staging, QA) to use the same settings instead of separate files
-*   Create a fake prod environment that allows you to test settings changes to prod-specific settings files, without deploying to prod
+* Refactor the settings files to share more code so that there’s less duplication, making settings changes in the future touch less files
+* Consolidate non-prod environments (sandbox, staging, QA) to use the same settings instead of separate files
+* Create a fake prod environment that allows you to test settings changes to prod-specific settings files, without deploying to prod
 
 Let the entire team shout out as many ideas as they can, then work through the list and try to get a consensus together about which ones are best. I’ve found that the “right” answers are often fairly apparent by this point, and there’s usually not much arguing to be had, but it’s still important to look at all the options.
 

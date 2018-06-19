@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: Drupal 7 Deconstructed
 date: 2016-10-14
-description: Ever wondered how Drupal works?
 tags:
   - development
   - drupal

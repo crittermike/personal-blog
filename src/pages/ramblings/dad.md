@@ -1,17 +1,15 @@
 ---
-templateKey: blog-post
 title: The day my dad died
 date: 2007-09-09
-description: Written the day he passed away
 tags:
   - personal
 ---
 
-Sometimes, my dad stays on the couch and plays on the computer or watches TV after my mom goes to bed. Then he'll fall asleep and wake up in the middle of the night and go to bed. That's what happened last night, except my mom woke up this morning, and he wasn't in bed. He was still asleep on the couch. 
+Sometimes, my dad stays on the couch and plays on the computer or watches TV after my mom goes to bed. Then he'll fall asleep and wake up in the middle of the night and go to bed. That's what happened last night, except my mom woke up this morning, and he wasn't in bed. He was still asleep on the couch.
 
-She panicked and ran to him and tried to wake him up. She said that she talked and then talked louder and then nudged him a couple times. It took her a few minutes until she realized that he wasn't going to wake up. She called 911, and 2 cops and a couple paramedics showed up. They checked him over and said something like "Now you know that there's nothing we can do, right?" My mom said "No! Can't you do the shocks or something!" No shocks. No anything. Nothing but that bitter aftertaste of denial and nausea you get when something truly horrible happens. They said that he'd been dead since 1:00 or 2:00 AM. They didn't know why, and we're not going to have an autopsy. 
+She panicked and ran to him and tried to wake him up. She said that she talked and then talked louder and then nudged him a couple times. It took her a few minutes until she realized that he wasn't going to wake up. She called 911, and 2 cops and a couple paramedics showed up. They checked him over and said something like "Now you know that there's nothing we can do, right?" My mom said "No! Can't you do the shocks or something!" No shocks. No anything. Nothing but that bitter aftertaste of denial and nausea you get when something truly horrible happens. They said that he'd been dead since 1:00 or 2:00 AM. They didn't know why, and we're not going to have an autopsy.
 
-She found him at 8:00 AM. She called me around 9:00 AM and left a voicemail saying it was an emergency. I called back right away. She said "Son, I'm so sorry to have to tell you this but I have some bad news." I expected her to say that my grandma had died, and I took a deep breath for that. As composed as possible, she said "Your dad passed away late last night." 
+She found him at 8:00 AM. She called me around 9:00 AM and left a voicemail saying it was an emergency. I called back right away. She said "Son, I'm so sorry to have to tell you this but I have some bad news." I expected her to say that my grandma had died, and I took a deep breath for that. As composed as possible, she said "Your dad passed away late last night."
 
 I always thought that when I got life-changing news like that, news that takes years to think about without your eyes swelling, I thought it wouldn't seem real at first. I was wrong. It hit me hard as hell, and I screamed and cried and started running over ways that she could be wrong, but I knew that no one is wrong about something like that. The only words I got out were "that's my dad! that's my dad!" over and over to Nancy and John and Jen and Karen and anyone who came in to try and help me. At least that's all I can remember saying in the deep gray blur of this morning. The morning I found out my dad had died.
 
@@ -25,7 +23,7 @@ After a flurry of calls from relatives and friends that my mom had to deal with 
 
 I just already miss him. I walked into his closet today looking for slippers to wear (in the havoc this morning I forgot socks so my feet were freezing). I saw his shoes on the floor, and just sat down and looked at them and cried alone in the closet for a few minutes. The people who took him away sent back all the stuff he had on him and in his pockets, and my mom gave me his watch. I can't put it down. It's on top of the bedpost right next to me as I'm typing this, because I can't type and hold it at the same time. Nancy found the receipt from sushi last night and framed it for me. I keep seeing his crappy handwriting where he wrote the tip amount (he always gave huge tips) and at least I know I'll always remember him by the night we spent together.
 
-But I can't stop thinking of all the things that will be missing to all of us now. Who will eat all of the apples my mom bought for him (like she does every week) or drink all the diet orange soda or take us out on the boat or tell us what the newest building is downtown or call me and leave me a voicemail telling me exactly what time of day it is even though it tells me that anyway or take pictures with the thumb covering up the lens or make all of our corny jokes or leave shoes for people to trip on or...or...answer to "diddyo"? Who will be my dad? 
+But I can't stop thinking of all the things that will be missing to all of us now. Who will eat all of the apples my mom bought for him (like she does every week) or drink all the diet orange soda or take us out on the boat or tell us what the newest building is downtown or call me and leave me a voicemail telling me exactly what time of day it is even though it tells me that anyway or take pictures with the thumb covering up the lens or make all of our corny jokes or leave shoes for people to trip on or...or...answer to "diddyo"? Who will be my dad?
 
 He'll always be my dad, I guess. I'll always love him. But I hate this.
 

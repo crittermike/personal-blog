@@ -2,41 +2,41 @@ module.exports = {
   siteMetadata: {
     title: `Mike Crittenden`,
     description: `Random ramblings and observations by Mike Crittenden`,
-    siteUrl: `https://mikecr.it`,
+    siteUrl: `https://mikecr.it`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Mike Crittenden",
-        short_name: "MikeCr.it",
-        start_url: "/",
-        background_color: "#4e5166",
-        theme_color: "#ff5964",
-        display: "minimal-ui",
+        name: 'Mike Crittenden',
+        short_name: 'MikeCr.it',
+        start_url: '/',
+        background_color: '#4e5166',
+        theme_color: '#ff5964',
+        display: 'minimal-ui'
         // icon: "src/images/icon.png", // This path is relative to the root of the site.
-      },
+      }
     },
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-6322775-21',
-      },
+        trackingId: 'UA-6322775-21'
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: `pages`,
-      },
+        name: `pages`
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-remark-prismjs`],
-      },
+        plugins: [`gatsby-remark-prismjs`]
+      }
     },
     {
       resolve: `gatsby-plugin-feed`,
@@ -72,7 +72,7 @@ module.exports = {
                               }
                             }
                           `,
-            output: '/drupal-planet.xml',
+            output: '/drupal-planet.xml'
           },
           {
             query: `
@@ -88,7 +88,6 @@ module.exports = {
                               allMarkdownRemark(
                                 limit: 1000,
                                 sort: { order: DESC, fields: [frontmatter___date] },
-                                filter: {frontmatter: { templateKey: { eq: "blog-post" } }}
                               ) {
                                 edges {
                                   node {
@@ -104,10 +103,10 @@ module.exports = {
                               }
                             }
                           `,
-            output: '/rss.xml',
-          },
-        ],
-      },
-    },
-  ],
-}
+            output: '/rss.xml'
+          }
+        ]
+      }
+    }
+  ]
+};

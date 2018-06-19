@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: On Google Wave
 date: 2010-08-05
-description: The trouble with doing too much
 tags:
   - tools
 ---

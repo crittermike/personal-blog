@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: Progress ruins it (or, Drupal is boring)
 date: 2009-07-30
-description: I miss programming
 tags:
   - development
   - drupal
@@ -10,25 +8,25 @@ tags:
 
 I love Drupal, don’t get me wrong. I have a really soft spot in my heart for ExpressionEngine too. And WordPress always has its place. But I’m growing more and more frustrated at the various CMS’s out there for one reason and one reason only: they’re too easy. Here’s a typical day spent building a site in Drupal:
 
-- Fire up the browser and go to the admin section.
-- Click around and change a few options
-- Go to Drupal.org and download a few modules
-- Copy them to the /sites/all/modules folder
-- Enable them in the admin section
-- Click around and configure those modules for awhile
-- Log out, test the site as an anonymous user
-- Log in, fix whatever didn’t work (usually permissions issues in my case)
-- Repeat until the site is finished.
+* Fire up the browser and go to the admin section.
+* Click around and change a few options
+* Go to Drupal.org and download a few modules
+* Copy them to the /sites/all/modules folder
+* Enable them in the admin section
+* Click around and configure those modules for awhile
+* Log out, test the site as an anonymous user
+* Log in, fix whatever didn’t work (usually permissions issues in my case)
+* Repeat until the site is finished.
 
 Of course, this isn’t always the case. Often you’ll run into cases where custom modules need to be built or contrib modules need to be extended, etc., but more often than not, you can build a whole site without any code. The exception to this is the templating which is really more annoying than fun. To illustrate, here’s the process for templating in Drupal:
 
-- Start with a PSD
-- Slice it up
-- Code up a static template with flat HTML/CSS (this is usually the fun part)
-- Create a new Drupal theme (usually by adapting Zen or Basic or BlueTrip or Starkish whatever)
-- Delete all preloaded CSS and upload your CSS
-- Open up page.tpl.php and throw in your container divs
-- Spend a while changing your CSS selectors to match what Drupal gives you
+* Start with a PSD
+* Slice it up
+* Code up a static template with flat HTML/CSS (this is usually the fun part)
+* Create a new Drupal theme (usually by adapting Zen or Basic or BlueTrip or Starkish whatever)
+* Delete all preloaded CSS and upload your CSS
+* Open up page.tpl.php and throw in your container divs
+* Spend a while changing your CSS selectors to match what Drupal gives you
 
 Boo. Coding is all about finding clever solutions to unique problems, and so far, the only part of the Drupal process that lets us do that is the slicing and dicing, which isn’t even really part of the “Drupal process” if you think about it. The beginner to novice at any of these CMS’s will love this, because it’s amazing the amount you can accomplish in a short period of time without even really doing anything yourself. That’s great right? Well yeah, sort of. It’s great for budgets and time constraints. It’s great for happy clients.
 

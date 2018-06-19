@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: Always be respondin'
 date: 2014-07-09
-description: Tech leads should be easy to reach
 tags:
   - process
   - leadership
@@ -16,8 +14,7 @@ How do you get any actual work done, in the midst of this?
 
 It's a tough problem, but there are some options. The option you end up with will depend on a lot of things, such as the amount of actual work you have to do vs. the amount of time you're having to spend helping others, the potential to delegate to someone else to be the official question answerer when you're away, the types of questions you're getting, how much sleep you need, how much you like coffee, etc. Let's dig in to a few possibilities, starting with prioritizing.
 
-Keeping Priorities Straight
----------------------------
+## Keeping Priorities Straight
 
 Let's be honest, you only have so many workable hours in a week, whether you're a human and you stick with 40, or you're a monster and you dip into the triple digits on occasion. If you don't manage it, then you will often find that you're booked for 40 hours of real work and you have 40 hours worth of "help! how do I do this!" questions to respond to, and you just can't get it all done.
 
@@ -37,14 +34,13 @@ Can the project wait for 2 hours for an answer to something while you get some c
 
 These are all important questions, and they all come down to setting priorities on the project. Spend your time on the highest priority "thing", whether it's helping Buddy figure out how to add Widget X, or whether it's getting some heads down time on a big feature and leaving everyone else to fend for themselves for a bit.
 
-Documentation Can Help Or Hurt
-------------------------------
+## Documentation Can Help Or Hurt
 
 You might be saying, "Why are you having to answer so many questions? Why not just write more documentation and refer the common questions to that?" And you'd be right--sort of. Documentation can be very powerful, but don't forget the golden rule:
 
 > Documentation is only useful if it's **really** useful.
 
-For documentation to do any good, it has to have all the obvious things going for it, such as being correct, clear, up to date, etc. But most importantly, it has to have that X factor which is that _it has to be so complete and so correct and so helpful that people just assume that the answers to their questions are there so they go there for answers first. _Because otherwise, even if a lot of questions are answered there, nobody will think to look there at the start of their quest. They will just assume that it's not there and will ask you instead.
+For documentation to do any good, it has to have all the obvious things going for it, such as being correct, clear, up to date, etc. But most importantly, it has to have that X factor which is that \_it has to be so complete and so correct and so helpful that people just assume that the answers to their questions are there so they go there for answers first. \_Because otherwise, even if a lot of questions are answered there, nobody will think to look there at the start of their quest. They will just assume that it's not there and will ask you instead.
 
 If that's the case, then what documentation is really doing is hurting you, because you're spending time writing docs that nobody ends up using, and you're still getting pinged about things when your answer is just "read the docs."
 
@@ -56,8 +52,7 @@ And remember, if you happen to be on the quest for Agility, then it's right ther
 
 > Working software over comprehensive documentation
 
-Delegating a Question Answerer..er
-----------------------------------
+## Delegating a Question Answerer..er
 
 Another common strategy is to select someone to be online and available for assistance when you're not, so that you can get some heads down time in on a regular basis during working hours without anyone else spinning their wheels needing help.
 
@@ -67,8 +62,7 @@ Often, the only person who fits that description is the tech lead, since most me
 
 So if this is the route you'd like to take, some planning is required to make sure the person has time budgeted for studying up on the big picture and providing dev support, and that you have a good person for that role in the project in the first place. I didn't do that.
 
-Delegating Your Actual Work
----------------------------
+## Delegating Your Actual Work
 
 If nobody fits the bill to give you some relief from questions/conversations for a couple hours a day, then maybe someone can give you relief at the other end of the work streams, by taking some of your actual work off your hands.
 
@@ -78,21 +72,19 @@ Even though they might have spent 10 hours giving feedback and helping others, s
 
 So bottom line on this one is that you have to tread carefully. Try to pick someone who has a light load or even better, plan so that that person has a light load.
 
-Sucking It Up
--------------
+## Sucking It Up
 
 As much as we all hate to admit it, there's often a point in the project when you have to help others by day and get crap done by night, and that's just what has to happen if you're going to hit a deadline. I've found that, while of course we all do all that's in our power to avoid that, it's best to assume it will happen at some point, and to prepare for the worst.
 
 This means doing a few things:
 
-*   Figure out a caffeinated drink that you like and that helps you be productive without getting the nervous shimmy shimmy shakes. If you're not a coffee person, check out some high-energy Tea or [Mate](http://en.wikipedia.org/wiki/Mate_(beverage)) or maybe just a good old Red Bull.
-*   Work at night in the same place that you work during the day, if possible. If not, then find a brightly lit room with an actual desk. Do not, under any circumstances, work in bed or low light, unless you want to spend the next few hours falling asleep or feeling grump that you're not falling asleep.
-*   Stop wasting time at a computer on insignificant crap. Point time wasting sites like Reddit and HN to localhost in your hosts file so they're not a temptation, or check out something like [StayFocusd](https://chrome.google.com/webstore/detail/stayfocusd/laankejkbhbdhmipfmgcngdelahlfoji?hl=en). Remember, each minute that you spend doing nothing is one less minute of sleep you're going to get.
-*   Experiment with early rising instead of late bedtimes. I've found that I'm a lot more productive if I wake up at 3am than if I stay up until 3am, because I'm not spending the whole time thinking "Ok, as soon as this is done I can go to sleep" which is a pretty terrible frame of mind for building a quality product.
-*   Only turn on IMs at night in case of emergency. Yes, I know that by like 1am you're wondering if other people still exist in the world, and you have a huge, undeniable urge to send a random YouTube video to the one guy you know who lives 8 timezones away from you. But you have to fight it--a sleepy late night IM session can be an hour long ramblefest that keeps you from your bed.
+* Figure out a caffeinated drink that you like and that helps you be productive without getting the nervous shimmy shimmy shakes. If you're not a coffee person, check out some high-energy Tea or [Mate](<http://en.wikipedia.org/wiki/Mate_(beverage)>) or maybe just a good old Red Bull.
+* Work at night in the same place that you work during the day, if possible. If not, then find a brightly lit room with an actual desk. Do not, under any circumstances, work in bed or low light, unless you want to spend the next few hours falling asleep or feeling grump that you're not falling asleep.
+* Stop wasting time at a computer on insignificant crap. Point time wasting sites like Reddit and HN to localhost in your hosts file so they're not a temptation, or check out something like [StayFocusd](https://chrome.google.com/webstore/detail/stayfocusd/laankejkbhbdhmipfmgcngdelahlfoji?hl=en). Remember, each minute that you spend doing nothing is one less minute of sleep you're going to get.
+* Experiment with early rising instead of late bedtimes. I've found that I'm a lot more productive if I wake up at 3am than if I stay up until 3am, because I'm not spending the whole time thinking "Ok, as soon as this is done I can go to sleep" which is a pretty terrible frame of mind for building a quality product.
+* Only turn on IMs at night in case of emergency. Yes, I know that by like 1am you're wondering if other people still exist in the world, and you have a huge, undeniable urge to send a random YouTube video to the one guy you know who lives 8 timezones away from you. But you have to fight it--a sleepy late night IM session can be an hour long ramblefest that keeps you from your bed.
 
-Choosers can't be beggars
--------------------------
+## Choosers can't be beggars
 
 So you have a few options, and it's up to you (and your team, and your project's needs, and your company processes, and your 3rd grade teacher) to choose the appropriate one.
 

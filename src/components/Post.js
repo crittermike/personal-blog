@@ -1,19 +1,18 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
-import Content, { HTMLContent } from '../components/Content'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import Link from 'gatsby-link';
+import Content, { HTMLContent } from '../components/Content';
 
 export const BlogPostTemplate = ({
   content,
   contentComponent,
-  description,
   tags,
   title,
   date,
-  helmet,
+  helmet
 }) => {
-  const PostContent = contentComponent || Content
+  const PostContent = contentComponent || Content;
 
   return (
     <section>
@@ -37,26 +36,24 @@ export const BlogPostTemplate = ({
         </div>
       ) : null}
     </section>
-  )
-}
+  );
+};
 
 BlogPostTemplate.propTypes = {
   content: PropTypes.string.isRequired,
   contentComponent: PropTypes.func,
-  description: PropTypes.string,
   title: PropTypes.string,
   date: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet),
-}
+  helmet: PropTypes.instanceOf(Helmet)
+};
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <BlogPostTemplate
       content={post.html}
       contentComponent={HTMLContent}
-      description={post.frontmatter.description}
       helmet={
         <Helmet title={`${post.frontmatter.title} | Mike Crittenden's Blog`} />
       }
@@ -64,16 +61,16 @@ const BlogPost = ({ data }) => {
       title={post.frontmatter.title}
       date={post.frontmatter.date}
     />
-  )
-}
+  );
+};
 
 BlogPost.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
-}
+    markdownRemark: PropTypes.object
+  })
+};
 
-export default BlogPost
+export default BlogPost;
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
@@ -83,9 +80,8 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
-        description
         tags
       }
     }
   }
-`
+`;

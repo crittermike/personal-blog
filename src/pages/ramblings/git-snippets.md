@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: A collection of random useful Git snippets
 date: 2017-05-18
-description: Because git is just so weird.
 tags:
   - development
   - tools
@@ -65,6 +63,7 @@ git commit -m "your message here"
 
 # now your changes are on the correct branch
 ```
+
 Delete all untracked files, but do a dry run first:
 
 ```bash

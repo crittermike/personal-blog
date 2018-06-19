@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: Parenting tips and tricks
 date: 2018-04-20
-description: Since I'm on my 4th kid now
 tags:
   - self
 ---
@@ -35,7 +33,7 @@ A fever below 101.4°F (or 100.4°F that lasts over 24 hours) isn't worth worryi
 
 Find a type/brand/size of sock that you like, buy a metric ton of that one type, and buy NO OTHER SOCKS! Oh, the endless frustration that I've dealt with over the years from trying to find tiny matching socks when we have 19 different types or designs or brands.
 
-Keep a backup outfit in the car at all times. 
+Keep a backup outfit in the car at all times.
 
 ### Sleep
 
@@ -43,12 +41,12 @@ Sleep is the one thing that never has gotten easier with time. Every other aspec
 
 If your baby sucks at sleeping as much as mine tend to, then a few pointers:
 
-- Seriously consider sleep training at about 6 months. The Ferber Method has saved our lives. Yes, there will be crying, but it won't last long and it would save you months or years of sleep deprived insanity.
-- This [auto-rocking bed for babies](https://smile.amazon.com/Fisher-Price-Auto-Rock-Sleeper-Stone/dp/B00NEO5UTU/ref=sr_1_4_s_it?s=baby-products&ie=UTF8&qid=1524236484&sr=1-4&keywords=rock+n+play) has worked really well with my kids.
-- If your baby will sleep fine on you but not when you put them in their bed, then maybe their bed is too cold - try running a space heater in the room for a few minutes beforehand.
-- Speaking of which, try your best to never let your baby sleep with a person holding them so they don't get used to it. When they fall asleep, put them in bed immediately.
-- Take it with a grain of salt, but we've had more success by not swaddling our babies. That way they get used to being free and it's not a big transition later, and they can learn to suck a thumb or whatever for soothing. 
-- When your baby wakes up in the middle of the night and you can tell they're not sleepy, just make a cup of tea and put on some Netflix and try to make the best of it.
+* Seriously consider sleep training at about 6 months. The Ferber Method has saved our lives. Yes, there will be crying, but it won't last long and it would save you months or years of sleep deprived insanity.
+* This [auto-rocking bed for babies](https://smile.amazon.com/Fisher-Price-Auto-Rock-Sleeper-Stone/dp/B00NEO5UTU/ref=sr_1_4_s_it?s=baby-products&ie=UTF8&qid=1524236484&sr=1-4&keywords=rock+n+play) has worked really well with my kids.
+* If your baby will sleep fine on you but not when you put them in their bed, then maybe their bed is too cold - try running a space heater in the room for a few minutes beforehand.
+* Speaking of which, try your best to never let your baby sleep with a person holding them so they don't get used to it. When they fall asleep, put them in bed immediately.
+* Take it with a grain of salt, but we've had more success by not swaddling our babies. That way they get used to being free and it's not a big transition later, and they can learn to suck a thumb or whatever for soothing.
+* When your baby wakes up in the middle of the night and you can tell they're not sleepy, just make a cup of tea and put on some Netflix and try to make the best of it.
 
 ### Chaos and noise
 
@@ -56,15 +54,15 @@ When your kids are going insane and running around and screaming and you feel to
 
 ### Entertainment
 
-When they're watching TV/movies, turn on captions because they will read them without meaning to and as they learn to read in school it'll help them practice. 
+When they're watching TV/movies, turn on captions because they will read them without meaning to and as they learn to read in school it'll help them practice.
 
 ### Sharing and fighting
 
-If you have multiple kids, then a rule of "everything belongs to everyone" can help. Just give the first turn to the kid that it actually does belong to, then start setting 10 minute timers to take turns until they get bored with it (which usually happens before the first cycle ends). That usually diffuses the fighting. 
+If you have multiple kids, then a rule of "everything belongs to everyone" can help. Just give the first turn to the kid that it actually does belong to, then start setting 10 minute timers to take turns until they get bored with it (which usually happens before the first cycle ends). That usually diffuses the fighting.
 
 ### Shopping with kids
 
-One of the things you don't think about before you have kids is how impossible it is to have a non-stressful shopping or grocery trip with them, especially once they hit 2 or 3 years old. Get as much delivered as you can afford (including groceries), and save the rest for when you have a babysitter. 
+One of the things you don't think about before you have kids is how impossible it is to have a non-stressful shopping or grocery trip with them, especially once they hit 2 or 3 years old. Get as much delivered as you can afford (including groceries), and save the rest for when you have a babysitter.
 
 Don't even attempt restaurants. It's not worth it.
 
@@ -72,9 +70,9 @@ Don't even attempt restaurants. It's not worth it.
 
 Don't try to be the perfect parent because we all suck in our own personal ways that children are experts at identifying.
 
-- It's fine if your kid doesn't have a bath every single day
-- Bribing with candy is often totally worth it
-- If your kid wants to keep their pajamas on all day, who cares
-- If you need to lock yourself in a bathroom to keep from yelling, then do your thing
+* It's fine if your kid doesn't have a bath every single day
+* Bribing with candy is often totally worth it
+* If your kid wants to keep their pajamas on all day, who cares
+* If you need to lock yourself in a bathroom to keep from yelling, then do your thing
 
 Just try to do what you need to do to give you and your kids a good time, because a happy family trumps everything else.

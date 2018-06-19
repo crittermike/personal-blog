@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: Drupal's Productivity Curve
 date: 2017-01-17
-description: Yet another way Drupal stands alone, for better or worse.
 tags:
   - development
   - drupal
@@ -16,8 +14,7 @@ Here's a very technical graph to illustrate:
 
 ![Drupal project productivity curve graph](https://dl.airtable.com/9cRA94n2RCyhdpkzZkhN_full_drupal_productivity.png)
 
-A typical Drupal project
-------------------------
+## A typical Drupal project
 
 Drupal projects make the first 80% pretty easy and the last 20% really freaking hard, which is the exact opposite of many other common frameworks or technologies. Let's look at an example.
 
@@ -29,12 +26,11 @@ But of course, that's not good enough. We just have a bunch of generated markup 
 
 What we basically had after those first couple weeks is a prototype. Drupal is in a world of its own (in a good way) when it comes to prototyping CRUD. It's all the stuff that comes in the conversion from the prototype to the real, living-and-breathing, hard-to-break-by-even-the-dumbest-of-users, looks-like-something-not-designed-by-a-programmer, website. Altering markup is tough (yes, even if you're just overriding a template). Theming in general is tough. Making little tweaks to functionality or behavior is tough. Drupal is just opinionated to the point that stuff that would be easy in non-Drupal sites becomes a pain. And again, that's not a bad thing. It's just a natural result of what makes Drupal Drupal.
 
-A Typical Non-Drupal Project
-----------------------------
+## A Typical Non-Drupal Project
 
 (First of all, this is pretty wishy washy because "Non-Drupal" can mean anything from Dreamweaver generated to whatever the latest Rails release is now. So bear with me and keep an open mind for now.)
 
-Remember when I said Drupal makes the first 80% really easy and the last 20% really hard? Well, you must know what's coming next then. 
+Remember when I said Drupal makes the first 80% really easy and the last 20% really hard? Well, you must know what's coming next then.
 
 _In general, non-Drupal projects tend to make the first 80% tougher than Drupal, but the last 20% is drastically easier._
 
@@ -44,8 +40,7 @@ But once you have that done, and you've reached the "working" site stage mention
 
 Theming is quicker. Tweaks are quicker. Moving this thing into the footer and that thing into the sidebar is quicker. All of the types of things that tend to make up the last 20% of the project are just much easier to do than if you were using Drupal
 
-Why the difference?
--------------------
+## Why the difference?
 
 Why are the 80% vs. 20% times so different between Drupal and non-Drupal projects? I think it comes down to one thing: who wrote the code.
 
@@ -53,13 +48,12 @@ One of the main draws of Drupal is that you can accomplish so much without havin
 
 Not writing that code means that it's tougher for you to change things when needed, for two reasons:
 
-1.  You just aren't as familiar with it. It takes you a while to understand what the original writers were doing, how they were doing it, and what the best way to make your change will be. The bigger the module that you're altering, the tougher this tends to be, and that's unfortunate because most of the really common modules (i.e., the ones that most commonly need to have their behavior altered) are pretty huge. 
+1.  You just aren't as familiar with it. It takes you a while to understand what the original writers were doing, how they were doing it, and what the best way to make your change will be. The bigger the module that you're altering, the tougher this tends to be, and that's unfortunate because most of the really common modules (i.e., the ones that most commonly need to have their behavior altered) are pretty huge.
 2.  You can't just go edit the file wherever it exists in core or contrib, like you could if it was custom code. Hacking contrib or core is a big no-no in Drupal-land so you have to spend your time in alter hooks, preprocess functions, overridden templates, or patches. There's nothing quite like spending hours trying to find a hook that would work or a template that you could override (and with what naming convention?!) just to add a stupid wrapper div to a stupid thing you need to wrap, which would take 2 minutes if you wrote the template to begin with.
 
-So that's the difference. That's why the first 80% is easier with Drupal (because you're able to stick to the pre-written code) and the last 20% is harder (because you've having to extend/alter/theme the pre-written code). 
+So that's the difference. That's why the first 80% is easier with Drupal (because you're able to stick to the pre-written code) and the last 20% is harder (because you've having to extend/alter/theme the pre-written code).
 
-So what?
---------
+## So what?
 
 Why does it matter? Slow start and fast finish vs. fast start and slow finish, who cares as long as it all gets done eventually and in about the same amount of time?
 
@@ -69,8 +63,7 @@ Instead, it often ends up just being a "feel" thing. Wow, the site already works
 
 You see where I'm going with this? If you show that much visible progress to a not-super-technical client in the first few weeks, then they can expect that much visible progress on a regular basis. It's a bit disheartening as a client to see so much progress in a few weeks, and then only little bits at a time for the next few months.
 
-Well, what's the answer?
-------------------------
+## Well, what's the answer?
 
 Yeah yeah, everything sucks, but what can we do about it? Sadly, I don't think there is a silver bullet.
 

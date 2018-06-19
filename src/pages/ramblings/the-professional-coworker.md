@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: The Professional Coworker
 date: 2013-03-21
-description: The art of being easy to work with.
 tags:
   - self
   - leadership
@@ -14,10 +12,10 @@ In my line of work I've met a lot of great programmers, and I've met a lot of pe
 
 If being a good coworker was very difficult or required some natural talent, this would be understandable, but most of the things that make someone easy to work with are dead simple. To understand, let's talk about what makes someone a good coworker. In my mind, it comes down to a few things:
 
-*   **Organization**. Good coworkers don't lose things (notes, emails, deadlines, tasks, passwords).
-*   **Responsiveness**. Good coworkers are easy to get a hold of and respond quickly.
-*   **Reliability**. Good coworkers do what they say they will do, when they say they will do it.
-*   **Personality**. Good coworkers are friendly, approachable, and positive.
+* **Organization**. Good coworkers don't lose things (notes, emails, deadlines, tasks, passwords).
+* **Responsiveness**. Good coworkers are easy to get a hold of and respond quickly.
+* **Reliability**. Good coworkers do what they say they will do, when they say they will do it.
+* **Personality**. Good coworkers are friendly, approachable, and positive.
 
 The interesting thing about that list is that all of those 4 things are just a matter of effort. We're not talking about "sense of humor" or "intelligence" or other inherited traits or lofty goals. Rather, it's things that anyone can accomplish with a little work.
 
@@ -25,13 +23,13 @@ The interesting thing about that list is that all of those 4 things are just a m
 
 Stop losing crap. That's it. If you lose crap and rely on your coworkers to find it for you or cover for you or feed you the same information more than twice, then you are bringing down your team. If you find this difficult, here are some (possibly common sense) things that might help:
 
-*   Put passwords in a password manager like [LastPass](http://lastpass.com).
-*   Keep all your miscellaneous notes in one searchable place like [Evernote](http://evernote.com).
-*   Keep a task list, and really keep up with it. People are keen on [Trello](http://trello.com) nowadays. I just use Google Tasks since it's built into Gmail so I see it a hundred times a day without meaning to.
-*   Keep your inbox empty except for emails that you need to respond to ASAP. Use a service like [FollowUpThen](http://followupthen.com) to archive things that you can't respond to yet and have them pop back up at a later time so you don't forget about them. This way you will never miss an email, because if it's in your inbox, it needs your attention now, and if it's not, then it doesn't.
-*   Put deadlines into Google Calendar and set email reminders for a day or two and a week ahead of time.
-*   Save all history from all IMs so that they're searchable (most chat apps support this) and don't delete any emails.
-*   When looking for information you think someone has given you before, make sure you search everywhere (email, IM history, notes, etc.) thoroughly before asking your coworker to tell you again.
+* Put passwords in a password manager like [LastPass](http://lastpass.com).
+* Keep all your miscellaneous notes in one searchable place like [Evernote](http://evernote.com).
+* Keep a task list, and really keep up with it. People are keen on [Trello](http://trello.com) nowadays. I just use Google Tasks since it's built into Gmail so I see it a hundred times a day without meaning to.
+* Keep your inbox empty except for emails that you need to respond to ASAP. Use a service like [FollowUpThen](http://followupthen.com) to archive things that you can't respond to yet and have them pop back up at a later time so you don't forget about them. This way you will never miss an email, because if it's in your inbox, it needs your attention now, and if it's not, then it doesn't.
+* Put deadlines into Google Calendar and set email reminders for a day or two and a week ahead of time.
+* Save all history from all IMs so that they're searchable (most chat apps support this) and don't delete any emails.
+* When looking for information you think someone has given you before, make sure you search everywhere (email, IM history, notes, etc.) thoroughly before asking your coworker to tell you again.
 
 ### Responsiveness
 

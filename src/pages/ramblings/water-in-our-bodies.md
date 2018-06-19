@@ -1,13 +1,11 @@
 ---
-templateKey: blog-post
 title: Just water in our bodies
 date: 2007-12-03
-description: A dream I had one time
 tags:
   - personal
 ---
 
-I haven't talked about my dad in a while. I just woke up from a dream about him. 
+I haven't talked about my dad in a while. I just woke up from a dream about him.
 
 In the dream, somehow we found out that he only had a couple more days to live, because he got sick. After a bunch of really random things (you know how dreams are), we went out to eat for the last night. No restaurants were open, and he said it was because if they opened and he went there there would be a riot of people trying to get in to say bye to him. We finally found a place, and me and my sister had to sit on the floor for some reason. My parents kept trying to sneakily get me drunk, and I just pretended to drink. I thought that they probably assumed it would be easier for me if I didn't remember the last night, but I couldn't stand the thought of forgetting.
 
@@ -17,6 +15,6 @@ I said, "Hey dad." He didn't say hey back. He just said "Superheroes don't give 
 
 That's when I woke up. For a second, it was relief; the dream wasn't real. And then it was.
 
-On the upside, I went to Tsunami (the sushi place downtown) for the first time since I went with him the night before he died. I even saw the table we sat at. And I didn't cry. That's good right? 
+On the upside, I went to Tsunami (the sushi place downtown) for the first time since I went with him the night before he died. I even saw the table we sat at. And I didn't cry. That's good right?
 
 Or maybe crying doesn't matter anyway. Maybe it's all just water in our bodies.

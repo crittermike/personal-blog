@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: Contrib-Minded Development
 date: 2016-05-06
-description: Write everything like the community is reading it.
 tags:
   - development
   - drupal
@@ -12,8 +10,7 @@ It’s common practice for people who use open source software (including Drupal
 
 I’m here to tell you about how giving back to the community can actually help you directly, right now, with the real-life projects that you’re working on at this very moment.
 
-What are you even talking about?
---------------------------------
+## What are you even talking about?
 
 Approach each problem already asking yourself, “How can I submit this to the open source community?” Or, in other words, “Which parts of this feature can be extracted to be useful to the open source community?”
 
@@ -51,8 +48,7 @@ Writing code that you intend to be useful for other people on other projects for
 
 This is software engineering 101, but it often gets missed in the day-to-day grind. Have you ever written a Drupal module that does 20 things, all of which are related to a specific feature, but otherwise have nothing in common with each other? And then a month later you realize that one of those 20 things would actually be useful for this new feature over here? If only you had been coding that for contrib and created separate utilities for each of those things. The regret!
 
-Why not?
---------
+## Why not?
 
 ### It takes more time/effort/budget/whatever to get things contrib-ready
 

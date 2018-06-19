@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: Coding skill vs. employee skill
 date: 2012-09-05
-description: How to turn a terrible accident into a learning opportunity.
 tags:
   - process
   - development

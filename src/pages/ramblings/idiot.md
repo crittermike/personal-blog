@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: Idiotic feelings per day (IFPS)
 date: 2018-04-11
-description: On when and how to embrace your inner idiot.
 tags:
   - self
 ---
@@ -13,8 +11,8 @@ How often each day do you feel like an idiot? Hopefully, the answer is "just eno
 
 This is likely a sign that one (or both) of two things is happening:
 
-- Your work is too difficult and stressful
-- Your self confidence is too low
+* Your work is too difficult and stressful
+* Your self confidence is too low
 
 Either of those things could lead you to burnout, and if you have both, then whoa nilly, watch yourself. Either one of those is a good thing to discuss with your manager.
 
@@ -26,7 +24,7 @@ It could also just mean that your self confidence is way too high, but in practi
 
 ## Sometimes I feel like an idiot.
 
-If you feel like an idiot every now and then, particularly when you make a random mistake or encounter something you haven't done before which is tough to understand, then you may just be in the sweet spot. 
+If you feel like an idiot every now and then, particularly when you make a random mistake or encounter something you haven't done before which is tough to understand, then you may just be in the sweet spot.
 
 Your work is likely just challenging enough that it keeps you interested and engaged but not so hard that it's driving you crazy. And hopefully your self confidence is keeping your failures under control so that they don't swallow you up.
 

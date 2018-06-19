@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: Take advantage of Drupal upgrades
 date: 2013-04-15
-description: Lifting and shifting is a missed opportunity.
 tags:
   - development
   - drupal

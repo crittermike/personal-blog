@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: The power of "The Suck List"
 date: 2018-06-11
-description: My favorite list
 tags:
   - personal
   - process

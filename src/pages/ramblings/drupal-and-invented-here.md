@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: Drupal and "Invented Here"
 date: 2013-06-04
-description: There's a module for that!
 tags:
   - process
   - leadership
@@ -30,7 +28,7 @@ So you started with an accepted contrib module and added more and more crap on t
 
 It's simple, code it yourself. In the example above, make a custom menu callback that runs an EFQ for the nodes and spits them out in a custom template, and build your own form to do the filtering. It's no more work than a couple hours, probably less time than you would have spent screwing around in the Views API trying to get it to obey you, and you get a solution that you have full control over and that you don't have to be embarrassed by.
 
-Another classic example is breadcrumbs. You can either dig into one of the many breadcrumbs modules (Hansel, Custom Breadcrumbs, Menu Breadcrumb, Crumbs, etc.) and try to find some combination that fills whatever bizarre requirements have been thrown at you. Or you can use drupal\_set\_breadcrumb() in your hook\_node\_view()'s and hook\_taxonomy\_term_view()'s and wherever to do exactly what you need with a few lines of code while avoiding the thousands of lines you'd be adding with any of those modules.
+Another classic example is breadcrumbs. You can either dig into one of the many breadcrumbs modules (Hansel, Custom Breadcrumbs, Menu Breadcrumb, Crumbs, etc.) and try to find some combination that fills whatever bizarre requirements have been thrown at you. Or you can use drupal_set_breadcrumb() in your hook_node_view()'s and hook_taxonomy_term_view()'s and wherever to do exactly what you need with a few lines of code while avoiding the thousands of lines you'd be adding with any of those modules.
 
 ### Reinventing the wheel
 

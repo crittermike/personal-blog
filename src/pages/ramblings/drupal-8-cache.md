@@ -1,5 +1,4 @@
 ---
-templateKey: blog-post
 title: Drupal 8 Cache API examples cheat sheet
 date: 2018-04-25
 tags:
@@ -7,7 +6,7 @@ tags:
   - development
 ---
 
-Here are some random useful snippets for dealing with caches in Drupal 8, just because I keep having to dig them up from the API. 
+Here are some random useful snippets for dealing with caches in Drupal 8, just because I keep having to dig them up from the API.
 
 I'll try to add more here as I go.
 
@@ -59,7 +58,7 @@ This one allows you to pass in an array of cache tags to invalidate manually.
 ```php
 use Drupal\Core\Cache\Cache;
 
-Cache::invalidateTags(['config:block.block.YOURBLOCKID', 'config:YOURMODULE.YOURCONFIG', 'node:YOURNID']); 
+Cache::invalidateTags(['config:block.block.YOURBLOCKID', 'config:YOURMODULE.YOURCONFIG', 'node:YOURNID']);
 ```
 
 **Note that the invalidation functions also exist for deleting caches, by just replacing `invalidate` with `delete`.**

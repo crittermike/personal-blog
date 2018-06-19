@@ -1,21 +1,18 @@
 ---
-templateKey: blog-post
 title: JIRA ticket template in the 3 C's format
 date: '2017-05-23T00:00:00-04:00'
-description: >-
-  A concise little template that you can copy and paste when creating JIRA
-  tickets.
 tags:
   - process
   - tools
 ---
+
 If you've never heard of the 3 C's, here's [some context](https://www.agilealliance.org/glossary/three-cs/).
 
 Basically, it's a strategy for writing issues/tickets that breaks them into the Card (user story), the Conversation (documentation and detailed requirements), and the Confirmation (testing steps and acceptance criteria).
 
 Here's a concise little template that you can copy and paste when creating JIRA tickets.
 
------
+---
 
 ## h2. Card
 
@@ -27,7 +24,7 @@ If this doesn't fit as a user story (e.g., a bug ticket), that's fine, just expl
 
 ## h2. Conversation
 
-This should answer the question "What are all the things someone would need to know in order to build this?" 
+This should answer the question "What are all the things someone would need to know in order to build this?"
 
 Attachments such as wireframes, screenshots, and other documentation may be referenced here. Implementation notes, if necessary, should go here as well.
 
@@ -35,7 +32,7 @@ Attachments such as wireframes, screenshots, and other documentation may be refe
 
 This should include both Acceptance Criteria for when a feature can be considered done and the Testing Steps on how to confirm that. Any other information required for testing should go here as well.
 
------
+---
 
 Note that there's nothing really JIRA-specific about this besides the fact that the headings start with "h2." which is JIRA's formatting. Feel free to steal it and adapt it however you'd like if it's useful to you.
 

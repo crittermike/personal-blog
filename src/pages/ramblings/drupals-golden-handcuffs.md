@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: Drupal's Golden Handcuffs
 date: 2012-10-08
-description: Drupal's blessing and its curse.
 tags:
   - development
   - drupal
@@ -16,21 +14,21 @@ Drupal is great for developers for exactly one reason: **it's really, really pro
 
 Here's a short list of example things that can be accomplished in Drupal with no custom code:
 
-*   A listing of arbitrary content written by user X and published within the last Y months (where X and Y are arguments in the URL in the form blog/user/X/recent/Y), grouped by month and formatted as an ordered list with custom wrapper elements and classes per-field and per-row.
-*   A full featured RESTful API which exposes your sites entities (whether it be products, users, categories, blog posts, videos, whatever) as resources with niceties like YouTube video links formatted as embed code and referenced images converted to grayscale.
-*   Completely custom types of content with arbitrary fields such as link inputs with custom validation, photo uploaders with unlimited values and drag/drop ordering, custom tabs acting as field containers, multiple WYSIWYGs per textarea depending on which input format you choose (markdown, raw HTML/PHP, filtered HTML with custom allowed tags, blah blah).
-*   Routinely parse and import content from external data sources (XML, CSV, and JSON to name a few) as Drupal content with source fields mapped to Drupal's custom content fields in the GUI
-*   Robust and fast site search powered by a Solr backend and index with support for facets/filters, sorting, weighted results, multiple search sections/pages each with their own set up default filters (by content type, category, arbitrary field value), etc.
-*   A global store locator with geocoding and proximity searching, locations displayed as custom icons on a map, and the ability to customize the output of the results list (show a thumbnail of the store if you want to, output results as a table with sortable columns if you want to, I could go on).
+* A listing of arbitrary content written by user X and published within the last Y months (where X and Y are arguments in the URL in the form blog/user/X/recent/Y), grouped by month and formatted as an ordered list with custom wrapper elements and classes per-field and per-row.
+* A full featured RESTful API which exposes your sites entities (whether it be products, users, categories, blog posts, videos, whatever) as resources with niceties like YouTube video links formatted as embed code and referenced images converted to grayscale.
+* Completely custom types of content with arbitrary fields such as link inputs with custom validation, photo uploaders with unlimited values and drag/drop ordering, custom tabs acting as field containers, multiple WYSIWYGs per textarea depending on which input format you choose (markdown, raw HTML/PHP, filtered HTML with custom allowed tags, blah blah).
+* Routinely parse and import content from external data sources (XML, CSV, and JSON to name a few) as Drupal content with source fields mapped to Drupal's custom content fields in the GUI
+* Robust and fast site search powered by a Solr backend and index with support for facets/filters, sorting, weighted results, multiple search sections/pages each with their own set up default filters (by content type, category, arbitrary field value), etc.
+* A global store locator with geocoding and proximity searching, locations displayed as custom icons on a map, and the ability to customize the output of the results list (show a thumbnail of the store if you want to, output results as a table with sortable columns if you want to, I could go on).
 
 Seriously, it's freaking ridiculous. The benefits of having all this available in a ready-made GUI without custom code should be obvious, but I'm going to list them out here so that I can waste your precious time.
 
-*   No debugging your custom code
-*   No digging through the docs trying to find the API function you need for an odd task
-*   A discoverable UI--click around until you find what you're looking for, rather than digging through code
-*   A team of thousands of users and contributors testing the code in ways you never would have imagined and fixing the bugs
-*   A much much smaller risk of security breaches due to that team
-*   Holy crap, so much faster
+* No debugging your custom code
+* No digging through the docs trying to find the API function you need for an odd task
+* A discoverable UI--click around until you find what you're looking for, rather than digging through code
+* A team of thousands of users and contributors testing the code in ways you never would have imagined and fixing the bugs
+* A much much smaller risk of security breaches due to that team
+* Holy crap, so much faster
 
 That last one sums it up. Creating advanced functionality by clicking around is so much faster than writing it by hand, even if you're using an opinionated framework that cuts down significantly on the custom code you'd have to write. The minimal debugging and bug fixing and security auditing and API reading are all just more time saved.
 
@@ -40,16 +38,16 @@ In essence, Drupal is _extremely_ productive once you know your way around core 
 
 So Drupal lets you get crap done really quickly and sends you laughing all the way to the bank...what's the problem? Here's the problem. Here's the typical day for a Drupal developer:
 
-*   I'm bored
-*   I'm bored
-*   WTF?????
-*   I'm bored
-*   Lunch!
-*   I'm bored
-*   I'm bored
-*   I'm bored
-*   YOU SUCK DRUPAL
-*   I'm bored
+* I'm bored
+* I'm bored
+* WTF?????
+* I'm bored
+* Lunch!
+* I'm bored
+* I'm bored
+* I'm bored
+* YOU SUCK DRUPAL
+* I'm bored
 
 The particularly astute readers will have noticed that a Drupal developer is usually either 1) being bored clicking around or 2) screaming at Drupal for failing them in extremely hard to debug ways.
 
@@ -69,16 +67,16 @@ Everything that you were excited about as a programmer--working through interest
 
 Still, you'll likely need to write _some_ custom code, whether it's for a unique feature that there isn't a module for or you're just doing some theming overrides. It seems like this should be the escape from the monotony of clicking but really it generally just ends up being frustrating. Drupal just isn't a great system to code for.
 
-*   It's complex. Try wrapping your head around [the render array](http://drupal.org/node/930760) in 7 or figuring out WTF to do with [stream wrappers](http://drupal.org/node/560424).
-*   Content and display are not well separated. Modules build markup directly, hopefully with theme_whatever functions that you can override in your theme, but often not. Doing this in custom code just feels sad, even after years of doing it.
-*   The Drupal 7 database abstraction layer is nothing more than a PITA. I don't know anyone who prefers that to raw SQL, and IMO the added benefit of having a tiny bit more database agnosticism isn't worth the decreased DX.
-*   Drupal 8 will "hopefully" bring with it Views in core, a GUI layout builder in core, edit-in-place in core, all of which are things which will have their own complexities to learn and understand and override and debug.
-*   Many changes require flushing the Drupal cache to appear. If I had a jellybean for everytime I flushed Drupal's cache in the last few years, I would be too busy eating jellybeans to write this.
-*   Documentation is still a mess, despite a huge community-wide effort to improve.
-    *   Individual contrib modules may or may not have docs, and if you're lucky they may be a page on drupal.org or a README.txt in the module. However, the chances that there are docs specifically for developers rather than site builders are slim to none, so you're often stuck digging through contrib module code looking for hooks and functions to do what you need.
-    *   Drupal core documentation is scattered across various book pages throughout the site and many things just don't have documentation at all (at least that that I've found).
-    *   Many docs pages are outdated but don't tell you that, so you find yourself hoping that someone in the comments has said what Drupal version that page applies to, and maybe even linked to an updated page for the newest release.
-    *   It's always a battle to find the API function you're looking for if you don't know what it's named. What's the function to select all nodes assigned to a taxonomy term? Here, let's search the API for taxonomy. Hmm, 10 pages of results. How about for "taxonomy nodes"? Zero results. Resort to Google, hope that someone has asked this on Stack Overflow, finally find it, and repeat the process 10 minutes later with another function.
+* It's complex. Try wrapping your head around [the render array](http://drupal.org/node/930760) in 7 or figuring out WTF to do with [stream wrappers](http://drupal.org/node/560424).
+* Content and display are not well separated. Modules build markup directly, hopefully with theme_whatever functions that you can override in your theme, but often not. Doing this in custom code just feels sad, even after years of doing it.
+* The Drupal 7 database abstraction layer is nothing more than a PITA. I don't know anyone who prefers that to raw SQL, and IMO the added benefit of having a tiny bit more database agnosticism isn't worth the decreased DX.
+* Drupal 8 will "hopefully" bring with it Views in core, a GUI layout builder in core, edit-in-place in core, all of which are things which will have their own complexities to learn and understand and override and debug.
+* Many changes require flushing the Drupal cache to appear. If I had a jellybean for everytime I flushed Drupal's cache in the last few years, I would be too busy eating jellybeans to write this.
+* Documentation is still a mess, despite a huge community-wide effort to improve.
+  * Individual contrib modules may or may not have docs, and if you're lucky they may be a page on drupal.org or a README.txt in the module. However, the chances that there are docs specifically for developers rather than site builders are slim to none, so you're often stuck digging through contrib module code looking for hooks and functions to do what you need.
+  * Drupal core documentation is scattered across various book pages throughout the site and many things just don't have documentation at all (at least that that I've found).
+  * Many docs pages are outdated but don't tell you that, so you find yourself hoping that someone in the comments has said what Drupal version that page applies to, and maybe even linked to an updated page for the newest release.
+  * It's always a battle to find the API function you're looking for if you don't know what it's named. What's the function to select all nodes assigned to a taxonomy term? Here, let's search the API for taxonomy. Hmm, 10 pages of results. How about for "taxonomy nodes"? Zero results. Resort to Google, hope that someone has asked this on Stack Overflow, finally find it, and repeat the process 10 minutes later with another function.
 
 So no, custom code cannot cure cancer cornflake. Custom code is either also boring if you've done that thing times before or frustrating if you haven't.
 

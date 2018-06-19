@@ -1,8 +1,6 @@
 ---
-templateKey: blog-post
 title: Grav CMS for Drupal Developers
 date: 2017-05-08
-description: An intro to Grav in terms Drupal devs can relate to.
 tags:
   - development
   - drupal
@@ -10,19 +8,17 @@ tags:
 
 If you've never heard of it, Grav is a pretty neat little flat-file CMS. If you're a Drupal developer, words like "flat-file" and "neat" and "little" are probably foreign to you. This post is an attempt to explain what Grav is, why it's neat, and how to use it, in terms that you'll understand.
 
-Wait, what's wrong with just using Drupal?
-------------------------------------------
+## Wait, what's wrong with just using Drupal?
 
 Why would anyone EVER think of leaving our beloved Drupal in the ditch to use something else?!
 
 > "If you want to build a small web site, I'm not sure it makes sense to use Drupal today. It's good for… ambitious sites." [#driesnote](https://twitter.com/hashtag/driesnote?src=hash)
-> 
+>
 > — Actually, (@eaton) [April 25, 2017](https://twitter.com/eaton/status/856862735820353536)
 
 That's a pretty good reason. Dries himself has said that Drupal may not be the best fit for small sites. There are simpler solutions that make the easy stuff easy and the hard stuff somewhat easier (as opposed to Drupal which makes the hard stuff easy and the easy stuff really frustratingly difficult sometimes).
 
-First of all, where is the database?
-------------------------------------
+## First of all, where is the database?
 
 As a Drupal developer, you live and die by the database. You've probably worked on sites that have had many hundreds of database tables. You might even remember the first time you realized that each field gets 2 database tables of its own.
 
@@ -34,8 +30,7 @@ The first thing you should understand about Grav is that there is no database. I
 
 That's it. If you want to make a change to config, you change it in the relevant YAML file. If you want to update a page, you change it in the relevant Markdown file.
 
-Oh, so it's a static site generator like Jekyll? No!
-----------------------------------------------------
+## Oh, so it's a static site generator like Jekyll? No!
 
 So far it may sound like a static site generator, but it's not. It's a CMS. This means that it can still do all the same types of things other CMS'es can do, that aren't available to static site generators.
 
@@ -43,8 +38,7 @@ For example, there's a really nice admin plugin that lets editors edit content v
 
 You can also still have dynamic content listings, send emails, redirect users, integrate with web services, display user-facing forms, etc., since Grav is built with PHP and is super duper alterable via custom plugins. You'd need to handle that stuff client-side with a static site generator.
 
-Content types in Drupal = Page Types in Grav
---------------------------------------------
+## Content types in Drupal = Page Types in Grav
 
 Let's start with the basics - the age old "content type." In Drupal, creating a content type happens in the UI.
 
@@ -54,8 +48,7 @@ This means that when creating a page in the UI, you can choose the “Whatever�
 
 [Read the docs on this](https://learn.getgrav.org/themes/theme-basics#content-pages-twig-templates).
 
-Custom fields in Drupal = Blueprints in Grav
---------------------------------------------
+## Custom fields in Drupal = Blueprints in Grav
 
 In Drupal, creating custom fields happens in the UI.
 
@@ -88,8 +81,7 @@ Then, in the Twig template (we’ll get to templates later), you can output the 
 
 [Read the docs on this.](https://learn.getgrav.org/forms/blueprints/example-page-blueprint)
 
-Views in Drupal = Page Collections in Grav
-------------------------------------------
+## Views in Drupal = Page Collections in Grav
 
 In Drupal, creating a content listing happens (usually) in the Views UI.
 
@@ -120,8 +112,7 @@ Another interesting note here is that there's a 3rd party plugin called [View](h
 
 [Read the docs on this](https://learn.getgrav.org/content/collections).
 
-Taxonomy in Drupal = Taxonomy in Grav
--------------------------------------
+## Taxonomy in Drupal = Taxonomy in Grav
 
 Yep, it’s even named the same thing for you.
 
@@ -146,8 +137,7 @@ And that’s it. Taxonomies are MUCH simpler in Grav than in Drupal. They aren�
 
 [Read the docs on this](https://learn.getgrav.org/content/taxonomy).
 
-Configuration/CMI/Features in Drupal = YAML files in Grav
----------------------------------------------------------
+## Configuration/CMI/Features in Drupal = YAML files in Grav
 
 In Drupal, configuration is stored in the database. Drupal 8 provides core with the ability to sync this configuration with YAML in the filesystem, but the source of truth is the database.
 
@@ -157,8 +147,7 @@ In Grav, the source of truth for configuration is the YAML itself, since there�
 
 [Read the docs on this](https://learn.getgrav.org/basics/grav-configuration).
 
-Install profiles/distributions in Drupal = Skeletons in Grav
-------------------------------------------------------------
+## Install profiles/distributions in Drupal = Skeletons in Grav
 
 This is one area where Grav really shines.
 
@@ -170,8 +159,7 @@ In Grav, since there’s no database, a “distribution” (or a "Skeleton" in G
 
 [Read the docs on this](https://learn.getgrav.org/advanced/grav-development#grav-skeletons).
 
-Paragraphs in Drupal = Modular Pages in Grav (kind of)
-------------------------------------------------------
+## Paragraphs in Drupal = Modular Pages in Grav (kind of)
 
 If you aren't familiar, Paragraphs is a very popular Drupal module that lets you build content in arbitrary "slices", each of which can contain arbitrary fields.
 
@@ -183,32 +171,29 @@ The UI for this is different since each of those sub-pages are editable on separ
 
 [Read the docs on this](https://learn.getgrav.org/content/modular).
 
-Drush in Drupal = CLI tools in Grav
------------------------------------
+## Drush in Drupal = CLI tools in Grav
 
 Drush has saved the butt of many a Drupal developer. These days, Drupal Console is doing pretty well for itself too, but it’s the same basic idea. Talking to your site via the CLI is useful.
 
 Grav has a couple built in CLI tools for many of the same purposes:
 
-*   [bin/grav](https://learn.getgrav.org/cli-console/grav-cli): performs basic site tasks such as clearing cache, making backups, installing dependencies, or creating new projects
-*   [bin/plugin](https://learn.getgrav.org/cli-console/grav-cli-plugin): performans commands provided by plugins (instead of Grav core), such as creating new users via the admin plugin
-*   [bin/gpm](https://learn.getgrav.org/cli-console/grav-cli-gpm): (“Grav Package Manager”) - performs tasks you would expect of a package manager, such as listing, downloading, and updating plugins
+* [bin/grav](https://learn.getgrav.org/cli-console/grav-cli): performs basic site tasks such as clearing cache, making backups, installing dependencies, or creating new projects
+* [bin/plugin](https://learn.getgrav.org/cli-console/grav-cli-plugin): performans commands provided by plugins (instead of Grav core), such as creating new users via the admin plugin
+* [bin/gpm](https://learn.getgrav.org/cli-console/grav-cli-gpm): (“Grav Package Manager”) - performs tasks you would expect of a package manager, such as listing, downloading, and updating plugins
 
-Other random stuff
-------------------
+## Other random stuff
 
 Here’s some other stuff that didn’t really deserve its own section. Feel free to read up on the docs on these if you’re curious.
 
-*   CSS/JS aggregation in Drupal = [Asset Manager (“Pipelining”) in Grav](https://learn.getgrav.org/themes/asset-manager)
-*   Image styles in Drupal = [Image Actions in Grav](https://learn.getgrav.org/content/media#image-actions)
-*   Webform in Drupal = [form.md files in Grav](https://learn.getgrav.org/forms/forms)
-*   Caching in Drupal = [Caching in Grav](https://learn.getgrav.org/advanced/performance-and-caching)
-*   Base Themes in Drupal = [Base Themes in Grav](https://learn.getgrav.org/themes/customization#theme-inheritance)
-*   Per-environment settings in Drupal = [Environment Configuration in Grav](https://learn.getgrav.org/advanced/environment-config)
-*   Multisite in Drupal = [Multisite in Grav](https://learn.getgrav.org/advanced/multisite-setup)
+* CSS/JS aggregation in Drupal = [Asset Manager (“Pipelining”) in Grav](https://learn.getgrav.org/themes/asset-manager)
+* Image styles in Drupal = [Image Actions in Grav](https://learn.getgrav.org/content/media#image-actions)
+* Webform in Drupal = [form.md files in Grav](https://learn.getgrav.org/forms/forms)
+* Caching in Drupal = [Caching in Grav](https://learn.getgrav.org/advanced/performance-and-caching)
+* Base Themes in Drupal = [Base Themes in Grav](https://learn.getgrav.org/themes/customization#theme-inheritance)
+* Per-environment settings in Drupal = [Environment Configuration in Grav](https://learn.getgrav.org/advanced/environment-config)
+* Multisite in Drupal = [Multisite in Grav](https://learn.getgrav.org/advanced/multisite-setup)
 
-Shortcomings and Downsides
---------------------------
+## Shortcomings and Downsides
 
 There are a few things to keep in mind if you’re looking at using Grav for a project instead of Drupal.
 
