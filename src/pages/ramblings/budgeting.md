@@ -5,11 +5,9 @@ tags:
   - personal
 ---
 
-> &quot;The cold harsh reality is that we have to balance the budget. &quot; ><small><cite title="Michael Bloomberg">Michael Freaking Bloomberg</cite></small>
+> &quot;The cold harsh reality is that we have to balance the budget. &quot;<small><br /><cite title="Michael Bloomberg">Michael Freaking Bloomberg</cite></small>
 
 "But I don't want to budget! Sticking to a budget is such a chore! Entering all my transactions is so hard!" Yeah, whew, that's a tough one. But you know what is even harder? Being hopelessly, desperately poor.
-
-===
 
 Or, maybe try being hopelessly, desperately poor and then finding out your car transmission is shot. Or that your kid broke his arm and had an ER trip. Or that your roof is leaking. This is your future, and it's really bumming me out.
 
@@ -37,11 +35,7 @@ Download any of the bajillions of mobile apps for tracking your spending, and us
 
 Now that you have a rough idea of how much you're spending on everything per month, you're ready to make a budget.
 
-Well aren't you lucky, because it just so happens that there's an app for that. First, watch this video. No seriously, it's barely even a minute long.
-
-<div class="embed-responsive embed-responsive-16by9">
-<iframe src='http://www.youtube.com/embed/C4VJ4v_Y_d8' frameborder='0' allowfullscreen></iframe>
-</div>
+Well aren't you lucky, because it just so happens that there's an app for that. First, watch [this video](http://www.youtube.com/embed/C4VJ4v_Y_d8). No seriously, it's barely even a minute long.
 
 Then head on over to [sign up for YNAB](https://www.youneedabudget.com/). That'll guide you through the process of entering your accounts and balances, then planning the budget for the coming month. And, OMG, there's a free trial that lasts a month. It's like Christmas!
 

@@ -7,8 +7,6 @@ tags:
 
 The thing about babies is that they're idiots. They can't even sleep right, which is like the easiest thing ever. You have to teach them. You're a parent, that's what you do now.
 
-===
-
 Let's get one thing straight though. Your baby sleeps plenty. It (yes, your baby is an "it" for the purpose of this post) just doesn't sleep in a way/time/pattern/duration/position that's convenient for you, you special snowflake.
 
 Let's work on changing that. Yes, we're talking about sleep training. This is happening.
