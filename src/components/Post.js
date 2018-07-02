@@ -10,6 +10,7 @@ export const BlogPostTemplate = ({
   tags,
   title,
   date,
+  timeToRead,
   helmet
 }) => {
   const PostContent = contentComponent || Content;
@@ -19,7 +20,9 @@ export const BlogPostTemplate = ({
       {helmet || ''}
       <h1 className="text-3xl my-6">{title}</h1>
       <p className="mb-32">
-        <small>{date}</small>
+        <small>
+          {date} - {timeToRead} minute read
+        </small>
       </p>
       <PostContent content={content} className="content" />
       <hr />
@@ -44,6 +47,7 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   title: PropTypes.string,
   date: PropTypes.string,
+  timeToRead: PropTypes.integer,
   helmet: PropTypes.instanceOf(Helmet)
 };
 
@@ -60,6 +64,7 @@ const BlogPost = ({ data }) => {
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
       date={post.frontmatter.date}
+      timeToRead={post.timeToRead}
     />
   );
 };
@@ -77,6 +82,7 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
+      timeToRead
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
