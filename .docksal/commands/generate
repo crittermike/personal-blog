@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+## Generate production GatsbyJS site build
+##
+## Runs `npm run build` (`gatsby build`)
+
+echo "Starting a production GatsbyJS site build..."
+
+cd "$PROJECT_ROOT/$DOCROOT"
+fin exec npx gatsby build

@@ -1,0 +1,24 @@
+#!/bin/bash
+
+## Start a local GatsbyJS development server
+##
+## Starts development server.
+## Should be left running for realtime updates.
+## Stop it by Ctrl-C when done.
+
+# Make sure project stack is running
+fin project start
+
+cd "$PROJECT_ROOT/$DOCROOT"
+
+echo "Starting GatsbyJS development server..."
+
+# Add own virtual host as 0.0.0.0 so that Gatsby could run development server on it
+# This is needed to workaround this https://github.com/gatsbyjs/gatsby/issues/5264
+fin exec -T "cat /etc/hosts | grep $VIRTUAL_HOST >/dev/null 2>/dev/null"
+if [[ $? != 0 ]]; then
+    fin exec "echo 0.0.0.0 $VIRTUAL_HOST | sudo tee -a /etc/hosts >/dev/null"
+fi
+
+# Start develop server
+fin exec npm run develop -- --host="${VIRTUAL_HOST}" --port=3000

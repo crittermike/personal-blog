@@ -74,3 +74,11 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     });
   }
 };
+
+exports.modifyWebpackConfig = ({config, stage}) => {
+  switch(stage) {
+    case 'develop':
+      config._config.output.publicPath = `/`;
+      break;
+  }
+};
