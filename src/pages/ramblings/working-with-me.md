@@ -20,7 +20,7 @@ If it's something that will take longer than a minute or two to chat about, then
 
 I work 9am-5pm ET with an hour lunch break every day, and that leaves a few hours a week to do at night in the quiet to hit my regular 40 hours. I almost never start before 9am or end after 5pm. If I do, then that is typically because something is horribly on fire.
 
-If you have your own preferred working hours, please feel free to send them to me. If I ever message you or otherwise reach out outside of your working hours, please do NOT respond until you start working again. i
+If you have your own preferred working hours, please feel free to send them to me. If I ever message you or otherwise reach out outside of your working hours, please do NOT respond until you start working again.
 
 I sometimes have a bad habit of sending people messages in off hours just because I get an exciting idea and I want to get it out, but I don't expect you to respond until your regular working hours start back up.
 
