@@ -16,11 +16,11 @@ If you want to talk to me, ping me on chat. Use the most appropriate team room i
 
 If it's something that will take longer than a minute or two to chat about, then let's jump onto a video call. I have [appear.in/critter](https://appear.in/critter) reserved so we can always use that.
 
-## Working hours
+## Schedule
 
 I work 9am-5pm ET with an hour lunch break every day, and that leaves a few hours a week to do at night in the quiet to hit my regular 40 hours. I almost never start before 9am or end after 5pm. If I do, then that is typically because something is horribly on fire.
 
-If you have your own preferred working hours, please feel free to send them to me. If I ever message you or otherwise reach out outside of your working hours, please do NOT respond until you start working again.
+Please tell me your typical working hours, and if I ever reach out to you outside of your working hours, DO NOT respond until you start working again.
 
 I sometimes have a bad habit of sending people messages in off hours just because I get an exciting idea and I want to get it out, but I don't expect you to respond until your regular working hours start back up.
 
@@ -32,7 +32,7 @@ Likewise, if I have feedback for you, positive or negative, I promise to just sa
 
 If you prefer to receive feedback in a certain way then please let me know.
 
-## My personality
+## Personality
 
 I'm a bit of a goofball and I try to keep things light. I'm usually in a good mood. If my goofing around is annoying to you then that's cool - let me know and I'll ease up. It happens.
 
@@ -40,7 +40,7 @@ If I ever seem mad or upset about something, then I can almost guarantee that it
 
 I tend to value action over discussion. I believe that lots of discussion and debate could be put to rest if we just went ahead and tried the thing we were discussing, because the trying usually makes the correct path obvious.
 
-I think opinions are important and should be defended. Please do not just go with the flow when working with me. Speak up and make your voice heard, even if it's difficult or intimidating at times. You may be worried that your opinions are wrong or make you sound dumb, but even if that were the case (it's not), I'd still prefer that to you not speaking up at all.
+I think opinions are important and should be defended. Please do not just go with the flow when working with me. If you think your opinions are dumb (they're not), then rest assured that a dumb opinion is better than no opinion.
 
 ## What I'm good at
 
@@ -48,14 +48,13 @@ I think opinions are important and should be defended. Please do not just go wit
 - I'm good at staying positive but realistic.
 - I'm good at seeing the big picture.
 - I'm good at staying organized and responsive.
-- I'm good at making tough decisions and communicating them.
 
 ## What I need help with
 
 - I'm not a great programmer. You are likely a better programmer than me.
+- I'm not good at saying things that I know will upset people.
+- I'm not much of a traveler - I avoid it as much as possible.
 - I'm not good at making sure the details are present and correct (edge cases, missing automated tests, proper documentation, etc.)
-- I'm not good at telling people no, especially people I don't know very well.
-- I'm not good at traveling - I avoid it as much as possible.
 
 ## My questions for you
 
