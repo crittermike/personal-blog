@@ -58,6 +58,7 @@ Not quite, for a few reasons:
 * Inline styles aren't limited to pre-defined options, meaning you can still end up with 90 different shades of blue)
 * Inline styles cause specificity issues, since they trump separate stylesheets.
 * Inline styles don't support print-specific styles.
+* Inline styles can't address pseudo-elements (such as `::before` and `::after`)
 * Inline styles can't apply to multiple elements. Utility classes can define `.bg-blue` once and have it apply to many things, which leads to shorter markup and quicker rendering speed.
 * Inline styles are a pain to type. Compare `class="f-sm bg-blue"` to `style="font-size: 10px; background-color: #0000ff;"`.
 

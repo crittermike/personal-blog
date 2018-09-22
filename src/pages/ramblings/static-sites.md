@@ -16,7 +16,7 @@ I believe that the vast majority of the web as it exists today could and should 
 
 The most obvious benefit here is performance. A static site has no DB queries, no backend language chugging or server processing, no waiting on external APIs to return, none of that. It does all of that ahead of time, so that it can send you a file that it already has sitting there. Because of this, static sites tend to be insanely, blazingly fast. Some generators take this even further and build in things like pre-loading of pages linked to from the current page, code splitting, inlining of CSS/JS, etc.
 
-Static sites are also very secure. It's just a bunch of HTML files, so the surface areas for attack are much smaller. Your biggest security risk would no longer be the website itself; instead it would be the hosting provider or possibly the security of any 3rd party services you're embedding on your site.
+Static sites are also very secure. They are a collection of HTML files, so the surface area for attack is much smaller. The biggest security risk becomes the hosting provider or the security of any third-party services you're embedding on your site, rather than the site itself.
 
 The hosting and infrastructure requirements are also about as simple as can be. You can host a static site anywhere - Amazon S3, Github Pages, static hosts like [Netlify](https://www.netlify.com) or [Surge](http://surge.sh/), there are even services that let you host them from your Dropbox. This means that hosting is super cheap, easy to set up, and almost effortless to maintain. If you need to switch to a new host at some point, just move the files. Plus, scaling is just a matter of putting your files in more places, and CDNs love static sites.
 
