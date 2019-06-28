@@ -1,4 +1,3 @@
-# Redirects from what the browser requests to what we serve
 /feed/drupal-planet					https://critter.blog/tag/drupal-planet/feed/
 /drupal-planet.xml					https://critter.blog/tag/drupal-planet/feed/
 /blog							https://critter.blog/blog-feed
@@ -12,4 +11,4 @@
 /ramblings/exporting-importing-large-drupal-databases/	https://critter.blog/2017/01/23/exporting-and-importing-big-drupal-databases/
 /ramblings/grav-cms-not-static-site-generator/		https://critter.blog/2018/04/30/grav-cms-is-not-a-static-site-generator/
 /ramblings/grav-cms-for-drupal-developers/		https://critter.blog/2017/05/08/grav-cms-for-drupal-developers/
-
+/*							https://critter.blog
