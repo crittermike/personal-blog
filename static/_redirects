@@ -1,8 +1,8 @@
 # Redirects from what the browser requests to what we serve
-/feed/drupal-planet           /drupal-planet.xml
-/blog                         /
-/side-projects                /about
-/feed                         /
+/feed/drupal-planet					https://critter.blog/tag/drupal-planet/feed/
+/drupal-planet.xml					https://critter.blog/tag/drupal-planet/feed/
+/blog							https://critter.blog/blog-feed
+/feed							https://critter.blog/feed
 /ramblings/functional-css				https://critter.blog/2018/06/08/in-defense-of-functional-css/
 /ramblings/drupal-8-cache/				https://critter.blog/2018/04/25/drupal-8-cache-api-examples-cheat-sheet/
 /ramblings/static-sites/				https://critter.blog/2018/04/20/static-sites-should-be-the-default/
