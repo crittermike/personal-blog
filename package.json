@@ -14,7 +14,7 @@
     "gatsby-remark-images": "^1.5.50",
     "gatsby-remark-prismjs": "^2.0.2",
     "gatsby-source-filesystem": "^1.5.23",
-    "gatsby-transformer-remark": "^1.7.40",
+    "gatsby-transformer-remark": "^5.25.1",
     "prismjs": "^1.14.0",
     "prop-types": "^15.6.0",
     "purgecss": "^0.21.0",
